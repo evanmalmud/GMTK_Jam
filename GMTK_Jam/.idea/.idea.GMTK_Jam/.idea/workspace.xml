@@ -2,58 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74a0afc6-3527-4e63-87de-8c66ca058119" name="Default Changelist" comment="Merge branch 'master' of https://github.com/evanmalmud/GMTK_Jam&#10;&#10;# Conflicts:&#10;#&#9;GMTK_Jam/Assets/Scripts/Bumper.meta">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTK_Jam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTK_Jam/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTK_Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTK_Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball-1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball-1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball-2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball-2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball-3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball-3.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball10.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball11.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball11.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball12.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball12.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball13.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball13.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball14.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball14.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball4.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball5.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball6.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball7.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball8.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball8.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball9.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/Sound_Pinball9.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Basic enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Basic enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Hard Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Hard Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Medium Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Medium Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MultiplierCalc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MultiplierCalc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/LeaderBoard/SetScoreCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/LeaderBoard/SetScoreCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Music Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Music Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/BulletTest3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BulletTest3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BumperScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BumperScore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/IncreaseDeaths.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/IncreaseDeaths.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoardEntry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoardEntry.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoardHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoardHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PseudoLeaderboardEntry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PseudoLeaderboardEntry.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ScoreCanvasScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ScoreCanvasScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TriggerEndMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TriggerEndMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/NewAudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/NewAudioMixer.mixer" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,19 +135,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/MusicSettings.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+            <state relative-caret-position="551">
+              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
               <folding>
-                <marker date="1564864453948" expanded="true" signature="6:152" ph="..." />
-                <marker date="1564864453948" expanded="true" signature="196:1311" ph="{...}" />
-                <marker date="1564864453948" expanded="true" signature="435:658" ph="{...}" />
-                <marker date="1564864453948" expanded="true" signature="685:816" ph="{...}" />
-                <marker date="1564864453948" expanded="true" signature="732:810" ph="{...}" />
-                <marker date="1564864453948" expanded="true" signature="853:955" ph="{...}" />
-                <marker date="1564864453948" expanded="true" signature="993:1099" ph="{...}" />
-                <marker date="1564864453948" expanded="true" signature="1138:1309" ph="{...}" />
-                <marker date="1564864453948" expanded="true" signature="1174:1237" ph="{...}" />
-                <marker date="1564864453948" expanded="true" signature="1242:1303" ph="{...}" />
+                <marker date="1564864521643" expanded="true" signature="6:152" ph="..." />
+                <marker date="1564864521643" expanded="true" signature="196:1348" ph="{...}" />
+                <marker date="1564864521643" expanded="true" signature="435:658" ph="{...}" />
+                <marker date="1564864521643" expanded="true" signature="685:816" ph="{...}" />
+                <marker date="1564864521643" expanded="true" signature="732:810" ph="{...}" />
+                <marker date="1564864521643" expanded="true" signature="853:955" ph="{...}" />
+                <marker date="1564864521643" expanded="true" signature="993:1099" ph="{...}" />
+                <marker date="1564864521643" expanded="true" signature="1138:1346" ph="{...}" />
+                <marker date="1564864521643" expanded="true" signature="1211:1274" ph="{...}" />
+                <marker date="1564864521643" expanded="true" signature="1279:1340" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -346,12 +298,12 @@
       <option name="presentableId" value="Default" />
       <updated>1564778589436</updated>
       <workItem from="1564778627295" duration="93000" />
-      <workItem from="1564840961224" duration="15848000" />
+      <workItem from="1564840961224" duration="16513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15941000" />
+    <option name="totallyTimeSpent" value="16606000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,7 +315,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25253063" />
@@ -590,19 +542,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/MusicSettings.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        <state relative-caret-position="551">
+          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
           <folding>
-            <marker date="1564864453948" expanded="true" signature="6:152" ph="..." />
-            <marker date="1564864453948" expanded="true" signature="196:1311" ph="{...}" />
-            <marker date="1564864453948" expanded="true" signature="435:658" ph="{...}" />
-            <marker date="1564864453948" expanded="true" signature="685:816" ph="{...}" />
-            <marker date="1564864453948" expanded="true" signature="732:810" ph="{...}" />
-            <marker date="1564864453948" expanded="true" signature="853:955" ph="{...}" />
-            <marker date="1564864453948" expanded="true" signature="993:1099" ph="{...}" />
-            <marker date="1564864453948" expanded="true" signature="1138:1309" ph="{...}" />
-            <marker date="1564864453948" expanded="true" signature="1174:1237" ph="{...}" />
-            <marker date="1564864453948" expanded="true" signature="1242:1303" ph="{...}" />
+            <marker date="1564864521643" expanded="true" signature="6:152" ph="..." />
+            <marker date="1564864521643" expanded="true" signature="196:1348" ph="{...}" />
+            <marker date="1564864521643" expanded="true" signature="435:658" ph="{...}" />
+            <marker date="1564864521643" expanded="true" signature="685:816" ph="{...}" />
+            <marker date="1564864521643" expanded="true" signature="732:810" ph="{...}" />
+            <marker date="1564864521643" expanded="true" signature="853:955" ph="{...}" />
+            <marker date="1564864521643" expanded="true" signature="993:1099" ph="{...}" />
+            <marker date="1564864521643" expanded="true" signature="1138:1346" ph="{...}" />
+            <marker date="1564864521643" expanded="true" signature="1211:1274" ph="{...}" />
+            <marker date="1564864521643" expanded="true" signature="1279:1340" ph="{...}" />
           </folding>
         </state>
       </provider>

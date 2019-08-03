@@ -48,7 +48,6 @@ public class MusicSettings : MonoBehaviour
 
     public void OnSoundToggleChange()
     {
-        Debug.Log(SoundToggle.isOn);
         if (SoundToggle.isOn)
         {
             Mixer.SetFloat("Master", -80);
