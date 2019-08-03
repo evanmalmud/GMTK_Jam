@@ -8,7 +8,7 @@ public class BumperDisableOnHit : MonoBehaviour
     bool disabled = false;
     float disabledCount = 0.0f;
 
-    Collider2D collider;
+    private Collider2D collider;
 
     private void Start()
     {
