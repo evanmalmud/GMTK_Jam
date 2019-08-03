@@ -55,6 +55,9 @@ public class MultiplierCalc : MonoBehaviour
                 countDownMulti += increaseBy * timePerMultiIncrease;
             }
         }
+        
+        if(FindObjectOfType<MultiplierText>())
+            FindObjectOfType<MultiplierText>().UpdateMultiplier(currentMultiplier);
     }
 
     void ResetMultiplier()

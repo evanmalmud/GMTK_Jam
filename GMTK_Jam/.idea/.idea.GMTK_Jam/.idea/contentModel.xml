@@ -39,6 +39,7 @@
               <e p="ScoreCanvasScript.cs" t="Include" />
               <e p="TriggerEndMenu.cs" t="Include" />
             </e>
+            <e p="MultiplierText.cs" t="Include" />
             <e p="MusicSettings.cs" t="Include" />
             <e p="ScoreTextPoints.cs" t="Include" />
           </e>

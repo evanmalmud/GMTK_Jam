@@ -5,11 +5,12 @@ using UnityEngine.UI;
 using TMPro;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
+[RequireComponent(typeof(Animator))]
 public class ScoreTextPoints : MonoBehaviour
 {
     private TextMeshProUGUI text;
 
-    private static readonly int ScoreUpdate = Animator.StringToHash("ScoreUpdate");
+    private static readonly int ScoreUpdate = Animator.StringToHash("Update");
 
     // Start is called before the first frame update
     void Start()
