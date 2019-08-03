@@ -8,9 +8,6 @@ public class BumperScore : MonoBehaviour
     public int ScorePoints;
 
     private void OnCollisionEnter2D(Collision2D other) {
-        GameManager.GetInstance().IncreaseScore(ScorePoints);
-
-        if(FindObjectOfType<ScorePointsSpawn>())
-            FindObjectOfType<ScorePointsSpawn>().AddScorePoint(other.contacts[0].point, ScorePoints);
+        GameManager.GetInstance().IncreaseScore(other.GetContact(0).point, ScorePoints);
     }
 }
