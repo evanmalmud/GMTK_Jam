@@ -92,5 +92,15 @@ PrefabInstance:
       propertyPath: IsMedium
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4953515787778215783, guid: a7f8c6724b88cb740ae67de4f898169d,
+        type: 3}
+      propertyPath: points
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953515787778215783, guid: a7f8c6724b88cb740ae67de4f898169d,
+        type: 3}
+      propertyPath: Speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7f8c6724b88cb740ae67de4f898169d, type: 3}

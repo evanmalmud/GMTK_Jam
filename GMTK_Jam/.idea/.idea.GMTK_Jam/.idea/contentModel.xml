@@ -14,8 +14,7 @@
           <e p="BumperScore.cs" t="Include" />
           <e p="DestroyOnTouch.cs" t="Include" />
           <e p="Enemies" t="Include">
-            <e p="EnemyMovement.cs" t="Include" />
-            <e p="IncreaseDeaths.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
             <e p="SpawnPointsController.cs" t="Include" />
           </e>
           <e p="Enemies Spawner.cs" t="Include" />
@@ -25,17 +24,23 @@
             <e p="MainMenuLoad.cs" t="Include" />
           </e>
           <e p="MouseFollowMove.cs" t="Include" />
+          <e p="MultiplierCalc.cs" t="Include" />
           <e p="ScorePoint.cs" t="Include" />
           <e p="ScorePointsSpawn.cs" t="Include" />
+          <e p="Sound" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="Sound.cs" t="Include" />
+          </e>
           <e p="UI" t="Include">
-            <e p="LeaderBoardEntry.cs" t="Include" />
-            <e p="LeaderBoardHandler.cs" t="Include" />
-            <e p="MultiplierEditorHelper.cs" t="Include" />
-            <e p="MultiplierEntry.cs" t="Include" />
-            <e p="PseudoLeaderboardEntry.cs" t="Include" />
-            <e p="ScoreCanvasScript.cs" t="Include" />
+            <e p="LeaderBoard" t="Include">
+              <e p="LeaderBoardEntry.cs" t="Include" />
+              <e p="LeaderBoardHandler.cs" t="Include" />
+              <e p="PseudoLeaderboardEntry.cs" t="Include" />
+              <e p="ScoreCanvasScript.cs" t="Include" />
+              <e p="TriggerEndMenu.cs" t="Include" />
+            </e>
+            <e p="MusicSettings.cs" t="Include" />
             <e p="ScoreTextPoints.cs" t="Include" />
-            <e p="TriggerEndMenu.cs" t="Include" />
           </e>
           <e p="WASDMove.cs" t="Include" />
         </e>

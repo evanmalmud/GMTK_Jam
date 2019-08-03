@@ -65,15 +65,21 @@ public class ScoreCanvasScript : MonoBehaviour
 
     [System.Obsolete]
     IEnumerator DownLoadHighScoresFromDatabase() {
-#pragma warning disable 0618
+        #pragma warning disable 0618
         WWW request = new WWW("http://dreamlo.com/lb/5d4548ac7682801758e56f55/pipe/0/" + WWW.EscapeURL(numberOfResults.ToString()));
-#pragma warning restore 0618
+        Debug.Log("Started Downloading leaderboard");
+        #pragma warning restore 0618
         yield return request;
 
         if (string.IsNullOrEmpty (request.error)) {
+            Debug.Log("leaderboard downloaded");
 			result = request.text;
             arr = result.Split('\n');
             newEntries = true;
+        }
+        else
+        {
+            Debug.LogWarning("Failed downloading the leaderboard");
         }
     }
     

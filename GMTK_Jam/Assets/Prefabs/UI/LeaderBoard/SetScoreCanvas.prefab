@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfResults: 20
+  leaderboard: {fileID: 2070809883516257636}
   handler: {fileID: 2070809883516257632}
 --- !u!1 &2070809883355660372
 GameObject:
@@ -370,6 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e921505add1a0684493f5b464008748e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leaderboard: {fileID: 2070809883291118173}
 --- !u!1 &2070809883516257636
 GameObject:
   m_ObjectHideFlags: 0
