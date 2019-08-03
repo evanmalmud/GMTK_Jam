@@ -1,18 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System;
 using UnityEngine;
 
 public class SpawnPointsController : MonoBehaviour
 {
     public GameObject BasicEnemyPrefab;
+    // ReSharper disable once NotAccessedField.Global
     public GameObject MediumEnemyPrefab;
+    // ReSharper disable once NotAccessedField.Global
     public GameObject HardEnemyPrefab;
 
-    private List<Transform> points = new List<Transform>();
-
-    [SerializeField]
-    private int wave;
+    private readonly List<Transform> points = new List<Transform>();
 
     public float mediumEnemyTimer;
 
@@ -21,6 +19,9 @@ public class SpawnPointsController : MonoBehaviour
     private int basicEnemyIndex;
     private bool secondSpawnDone, thirdSpawnDone, fourthSpawnDone, fifthSpawnDone;
     private bool secondRandomSpawnLaunched;
+
+    private float thirdStepTimer;
+    private bool tsSecondWave, tsThirdWave, tsFourthWave, tsFifthWave;
 
     // Start is called before the first frame update
     void Start()
@@ -38,26 +39,31 @@ public class SpawnPointsController : MonoBehaviour
     void Update()
     {
         if(GameManager.GetInstance().GetBasicEnemeiesDefeated() == 5) {
-            SpawnMediumEnemies();
+            StartCoroutine(SpawnMediumEnemies());
+        }
+        if(GameManager.GetInstance().GetMediumEnemeiesDefeated() == 5) {
+            StartCoroutine(ThirdStepSpawns());
         }
     }
 
     IEnumerator SpawnBasicEnemy() {
+        Debug.Log("basic spawn");
         SpawnEnemy("basic", false, basicEnemyIndex);
 
         yield return new WaitForSeconds(3);
         
         basicEnemyIndex = (basicEnemyIndex + 1)%points.Count;
-        SpawnBasicEnemy();
+        yield return SpawnBasicEnemy();
     }
 
     // ReSharper disable once FunctionRecursiveOnAllPaths
+    // ReSharper disable once UnusedMethodReturnValue.Local
     IEnumerator SecondRandomSpawn() {
         SpawnEnemy("medium", true);
 
-        yield return new WaitForSeconds(random.Next(7, 20));
+        yield return new WaitForSeconds(random.Next(7, 21));
 
-        SecondRandomSpawn();
+        yield return SecondRandomSpawn();
     }
 
     IEnumerator SpawnMediumEnemies() {
@@ -74,9 +80,10 @@ public class SpawnPointsController : MonoBehaviour
 
                 fifthSpawnDone = true;
 
-                SecondRandomSpawn();
-                SpawnMediumEnemies();
+                StartCoroutine(SecondRandomSpawn());
             }
+            
+            yield return SpawnMediumEnemies();
         } else if(mediumEnemyTimer > 480) {
             // spawn 5
             if(!fifthSpawnDone) {
@@ -87,9 +94,9 @@ public class SpawnPointsController : MonoBehaviour
                 }
 
                 fifthSpawnDone = true;
-
-                SpawnMediumEnemies();
             }
+
+            yield return SpawnMediumEnemies();
         } else if(mediumEnemyTimer > 300) {
             // spawn 4
             if(!fourthSpawnDone) {
@@ -99,9 +106,9 @@ public class SpawnPointsController : MonoBehaviour
                 }
 
                 fourthSpawnDone = true;
-
-                SpawnMediumEnemies();
             }
+
+            yield return SpawnMediumEnemies();
         } else if(mediumEnemyTimer > 180) {
             // spawn 3
             if(!thirdSpawnDone) {
@@ -119,9 +126,9 @@ public class SpawnPointsController : MonoBehaviour
                 SpawnEnemy("medium", false, r3);
 
                 thirdSpawnDone = true;
-
-                SpawnMediumEnemies();
             }
+
+            yield return SpawnMediumEnemies();
         } else if(mediumEnemyTimer > 90) {
             // spawn 2
             if(!secondSpawnDone) {
@@ -135,25 +142,93 @@ public class SpawnPointsController : MonoBehaviour
                 SpawnEnemy("medium", false, r2);
 
                 secondSpawnDone = true;
-
-                SpawnMediumEnemies();
             }
+
+            yield return SpawnMediumEnemies();
         } else {
             // spawn 1
             yield return new WaitForSeconds(7);
             SpawnEnemy("medium", true);
-            SpawnMediumEnemies();
+            yield return SpawnMediumEnemies();
         }
     }
 
-    void SpawnEnemy(string type, bool isRandom, int index = 0) {
-        Transform entry;
+    IEnumerator ThirdStepRandomSpawns()
+    {
+        yield return new WaitForSeconds(random.Next(13, 26)); // 13-25s
+        SpawnEnemy("hard", true);
 
-        if(isRandom) {
-            entry = points[random.Next(0, points.Count)];
-        } else {
-            entry = points[index];
+        ThirdStepRandomSpawns();
+    }
+
+    IEnumerator ThirdStepSpawns()
+    {
+        thirdStepTimer += Time.deltaTime;
+
+        if (thirdStepTimer > 900)
+        {
+            // spawn 5
+        } else if (thirdStepTimer > 600)
+        {
+            // spawn 4
+            if (!tsFourthWave)
+            {
+                // spawn 4 : 2 in all entries + random spawn for 13 to 25 seconds
+                for(int i = 0; i < points.Count; i++) {
+                    SpawnEnemy("hard", false, i);
+                    SpawnEnemy("hard", false, i);
+                }
+
+                tsFourthWave = true;
+
+                ThirdStepRandomSpawns();
+            }
+        } else if (thirdStepTimer > 300)
+        {
+            // spawn 3
+            if (!tsThirdWave)
+            {
+                // spawn 3 : 1 in all entries
+                for(int i = 0; i < points.Count; i++) {
+                    SpawnEnemy("hard", false, i);
+                    SpawnEnemy("hard", false, i);
+                }
+
+                tsThirdWave = true;
+            }
+
+            ThirdStepSpawns();
+        } else if (thirdStepTimer > 120)
+        {
+            // spawn 2
+            if (!tsSecondWave)
+            {
+                // spawn 2 : 1 in all entries
+                for(int i = 0; i < points.Count; i++) {
+                    SpawnEnemy("hard", false, i);
+                }
+
+                tsSecondWave = true;
+            }
+
+            ThirdStepSpawns();
         }
+        else
+        {
+            // spawn 1 : on random entry every 13s
+            SpawnEnemy("hard", true);
+            
+            yield return new WaitForSeconds(13);
+
+            ThirdStepSpawns();
+        }
+    }
+
+    void SpawnEnemy(string type, bool isRandom, int index = 0)
+    {
+        Debug.Log("spawning");
+        
+        var entry = isRandom ? points[random.Next(0, points.Count)] : points[index];
 
         GameObject prefab;
         switch(type) {
