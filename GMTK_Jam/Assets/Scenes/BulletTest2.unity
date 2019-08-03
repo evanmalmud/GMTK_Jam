@@ -574,11 +574,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 407520856, guid: dd2130e4cad072740884974ca2f7fa1a, type: 3}
       propertyPath: MoveSpeed
-      value: 650
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 407520856, guid: dd2130e4cad072740884974ca2f7fa1a, type: 3}
       propertyPath: bounce
       value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 407520856, guid: dd2130e4cad072740884974ca2f7fa1a, type: 3}
+      propertyPath: disableMovementDefaultVal
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd2130e4cad072740884974ca2f7fa1a, type: 3}

@@ -14,8 +14,8 @@ public class MouseFollowMove : MonoBehaviour
     Rigidbody2D rb;
 
     bool disableMovement = false;
-    float disableMovementTimer = 1.0f;
-    float disableMovementDefaultVal = 1.0f;
+    float disableMovementTimer = 0.0f;
+    public float disableMovementDefaultVal = 1.0f;
 
     // Use this for initialization
     void Start()
