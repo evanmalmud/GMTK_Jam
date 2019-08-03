@@ -6,15 +6,60 @@ public class ScoreCanvasScript : MonoBehaviour
 {
     public int numberOfResults;
 
+    public GameObject leaderboard;
     public LeaderBoardHandler handler;
 
-    private void OnEnable() {
-        Time.timeScale = 0f;
+    bool newEntries = false;
+    string result;
+    string[] arr;
+    string[] infos;
 
+    private void Awake()
+    {
         DownloadScores();
     }
 
-    private void OnDisable() {
+    private void Start()
+    {
+        leaderboard.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            leaderboard.SetActive(!leaderboard.activeSelf);
+            if(leaderboard.activeSelf) {
+                enableLeaderboard();
+            }
+            else
+            {
+                disableLeaderboard();
+            }
+        }
+    }
+
+    private void enableLeaderboard() {
+        Time.timeScale = 0f;
+
+        if(newEntries)
+        {
+            handler.ClearEntries();
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                if (arr[i].Length > 1)
+                {
+                    infos = arr[i].Split('|');
+                    if (infos.Length >= 2)
+                        handler.addEntry("#" + (i + 1).ToString(), infos[0].ToUpper(), infos[1]);
+                }
+            }
+            newEntries = false;
+        }
+
+    }
+
+    private void disableLeaderboard() {
         Time.timeScale = 1f;
     }
 
@@ -26,19 +71,10 @@ public class ScoreCanvasScript : MonoBehaviour
         yield return request;
 
         if (string.IsNullOrEmpty (request.error)) {
-			string result = request.text;
-            string[] arr = result.Split('\n');
-            string[] infos;
-
-            handler.ClearEntries();
-            for(int i = 0; i < arr.Length - 1; i++) {
-                if(arr[i].Length > 1) {
-                    infos = arr[i].Split('|');
-                    if(infos.Length >= 2)
-                        handler.addEntry("#" + (i+1).ToString(), infos[0].ToUpper(), infos[1]);
-                }
-            }
-		}
+			result = request.text;
+            arr = result.Split('\n');
+            newEntries = true;
+        }
     }
     
     public void OnEnterScore() {

@@ -6,23 +6,7 @@ public class GameManager
 {
     private static GameManager instance;
 
-    public static GameManager GetInstance() {
-        if(instance == null)
-            instance = new GameManager();
-        
-        return instance;
-    }
-
     private int score;
-    public int GetScore() { return score; }
-    public void IncreaseScore(int amount) {
-        score += amount;
-
-        ScoreTextPoints sp = GameObject.FindObjectOfType<ScoreTextPoints>();
-        if(sp != null) {
-            sp.UpdateScoreText(score);
-        }
-    }
 
     private int basicEnemiesDefeated;
     public int GetBasicEnemeiesDefeated() { return basicEnemiesDefeated; }
@@ -34,6 +18,41 @@ public class GameManager
 
 
     private void Start() {
-        IncreaseScore(0);
+        ResetScore();
+    }
+
+    public static GameManager GetInstance()
+    {
+        if (instance == null)
+            instance = new GameManager();
+
+        return instance;
+    }
+
+    public int GetScore() { return score; }
+
+    public void ResetScore(){
+        score = 0;
+    }
+
+    public void IncreaseScore(int amount)
+    {
+        score += amount;
+
+        ScoreTextPoints sp = GameObject.FindObjectOfType<ScoreTextPoints>();
+        if (sp != null)
+        {
+            sp.UpdateScoreText(score);
+        }
+    }
+
+    void updateMultiplier()
+    {
+
+    }
+
+    void clearMultiplier()
+    {
+
     }
 }
