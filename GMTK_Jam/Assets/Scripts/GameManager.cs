@@ -33,7 +33,8 @@ public class GameManager
     public void IncreaseScore(Vector2 position, int amount)
     {
         GameObject.FindObjectOfType<MultiplierCalc>().UpdateMultiplier(1);
-        score += amount;
+
+        score += amount * GameObject.FindObjectOfType<MultiplierCalc>().currentMultiplier;
         ScoreTextPoints sp = GameObject.FindObjectOfType<ScoreTextPoints>();
         if (sp != null)
         {

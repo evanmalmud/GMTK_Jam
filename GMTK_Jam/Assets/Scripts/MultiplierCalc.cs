@@ -30,29 +30,31 @@ public class MultiplierCalc : MonoBehaviour
         {
             countDownMulti -= Time.deltaTime;
         }
-        print("currentEnemiesHit" + currentEnemiesHit);
-        print("currentMultiplier" + currentMultiplier);
-        print("countDownMulti" + countDownMulti);
     }
 
     public void UpdateMultiplier(int newDestroys)
     {
-        print("UpdateMultiplier currentEnemiesHit" + currentEnemiesHit);
-        print("UpdateMultiplier currentMultiplier" + currentMultiplier);
-        print("UpdateMultiplier countDownMulti" + countDownMulti);
-
         currentEnemiesHit += newDestroys;
         if(currentMultiplier == 1 && currentEnemiesHit == 1)
         {
             //Reset the counter because it is your first hit
             countDownMulti = timePerMultiIncrease;
         }
-        else if (currentEnemiesHit / enemiesPerMultiIncrease > currentMultiplier)
+        else if ((currentEnemiesHit / enemiesPerMultiIncrease) - 1  > currentMultiplier)
         {
-            int increaseBy = currentEnemiesHit / enemiesPerMultiIncrease;
-            print("increaseBy" + increaseBy);
-            currentMultiplier += increaseBy;
-            countDownMulti += increaseBy * timePerMultiIncrease;
+            if (currentMultiplier >= maxMultiplier)
+            {
+                currentMultiplier = maxMultiplier;
+                countDownMulti += timePerMultiIncrease/enemiesPerMultiIncrease;
+            }
+            else
+            {
+                //Increase by each factor if you break into the next level
+                int increaseBy = (currentEnemiesHit / enemiesPerMultiIncrease) - 1 - currentMultiplier;
+                print("increaseBy " + increaseBy);
+                currentMultiplier += increaseBy;
+                countDownMulti += increaseBy * timePerMultiIncrease;
+            }
         }
     }
 
