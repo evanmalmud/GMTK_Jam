@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSpeed: 2
-  FocusMaxDuration: 0.5
+  FocusMaxDuration: 500
 --- !u!50 &1497862841
 Rigidbody2D:
   serializedVersion: 4

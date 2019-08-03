@@ -12,7 +12,7 @@ public class InitialForce : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(Vector2.right * forceVal);
+        rb.AddForce(Vector2.up * forceVal);
     }
 
     private void Update()
