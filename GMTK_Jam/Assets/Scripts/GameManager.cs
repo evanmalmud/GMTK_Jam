@@ -27,4 +27,8 @@ public class GameManager
             sp.UpdateScoreText(score);
         }
     }
+
+    public int GetScore() {
+        return score;
+    }
 }

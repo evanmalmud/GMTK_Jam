@@ -4,18 +4,9 @@ using UnityEngine;
 
 public class LeaderBoardHandler : MonoBehaviour
 {
-    public void addEntry(string rank, string name, string score) {
-        
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject EntryPrefab;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void addEntry(string rank, string name, string score) {
+        (Instantiate(EntryPrefab, transform) as GameObject).GetComponent<LeaderBoardEntry>().SetInfos(rank, name, score);
     }
 }
