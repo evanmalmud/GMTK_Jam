@@ -14,6 +14,10 @@ public class ScoreCanvasScript : MonoBehaviour
         DownloadScores();
     }
 
+    private void OnDisable() {
+        Time.timeScale = 1f;
+    }
+
     [System.Obsolete]
     IEnumerator DownLoadHighScoresFromDatabase() {
         WWW request = new WWW("http://dreamlo.com/lb/5d4548ac7682801758e56f55/pipe/0/" + WWW.EscapeURL(numberOfResults.ToString()));
@@ -24,18 +28,22 @@ public class ScoreCanvasScript : MonoBehaviour
             string[] arr = result.Split('\n');
             string[] infos;
 
+            handler.ClearEntries();
             for(int i = 0; i < arr.Length - 1; i++) {
                 if(arr[i].Length > 1) {
                     infos = arr[i].Split('|');
                     if(infos.Length >= 2)
-                        handler.addEntry(i.ToString(), infos[0].ToUpper(), infos[1]);
+                        handler.addEntry("#" + (i+1).ToString(), infos[0].ToUpper(), infos[1]);
                 }
             }
 		}
     }
     
     public void OnEnterScore() {
-        StartCoroutine(UploadNewHighscore(FindObjectOfType<PseudoLeaderboardEntry>().GetPseudo().ToUpper(), GameManager.GetInstance().GetScore()));
+        string pseudo = FindObjectOfType<PseudoLeaderboardEntry>().GetPseudo();
+        if(pseudo.Length > 2) {
+            StartCoroutine(UploadNewHighscore(pseudo.ToUpper(), GameManager.GetInstance().GetScore()));
+        }
     }
 
     public void DownloadScores() {
