@@ -564,6 +564,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 833bb80ecf331fb47b45b4e23804e209, type: 3}
+--- !u!1 &391601102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7205804398259734745, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+    type: 3}
+  m_PrefabInstance: {fileID: 7205804397877482263}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &391601107
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391601102}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89b86fe52adcb5c40a701444e483b637, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &399018670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2034,51 +2059,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
         type: 3}
-      propertyPath: sounds.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[2].name
-      value: Theme
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[2].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 438c19eb2e695094d974ab1617c0c526, type: 3}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[2].volume
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[2].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[2].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[2].playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[1].volume
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[0].volume
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
       propertyPath: sounds.Array.data[3].name
       value: Theme
       objectReference: {fileID: 0}
@@ -2107,28 +2087,10 @@ PrefabInstance:
       propertyPath: sounds.Array.data[3].playOnAwake
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[2].mixerGroup
-      value: 
-      objectReference: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
-        type: 2}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[1].mixerGroup
-      value: 
-      objectReference: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
-        type: 2}
-    - target: {fileID: 1937675513486029986, guid: 46f3bb25701490a41ab3a5b397c7ae69,
-        type: 3}
-      propertyPath: sounds.Array.data[0].mixerGroup
-      value: 
-      objectReference: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
-        type: 2}
     - target: {fileID: 4638951745771589764, guid: 46f3bb25701490a41ab3a5b397c7ae69,
         type: 3}
       propertyPath: m_Name
-      value: MultiplierCalc
+      value: MultiplierCalc+AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 4638951745771589766, guid: 46f3bb25701490a41ab3a5b397c7ae69,
         type: 3}
@@ -2625,6 +2587,41 @@ PrefabInstance:
     - target: {fileID: 7205804399592536098, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205804398259734744, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205804398259734744, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205804398259734744, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205804398259734744, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205804398259734744, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205804398259734744, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205804398259734744, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

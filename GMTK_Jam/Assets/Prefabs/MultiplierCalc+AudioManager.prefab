@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4638951745771589765}
   - component: {fileID: 1937675513486029986}
   m_Layer: 0
-  m_Name: MultiplierCalc
+  m_Name: MultiplierCalc+AudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,19 +67,45 @@ MonoBehaviour:
   sounds:
   - name: Bumper 0
     clip: {fileID: 8300000, guid: 30707841e13dd3c4badff47b9ac0634e, type: 3}
-    volume: 1
+    volume: 0.5
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
     loop: 0
-    mixerGroup: {fileID: 0}
+    playOnAwake: 0
+    mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
     source: {fileID: 0}
   - name: Bumper 1
     clip: {fileID: 8300000, guid: d19971bde1413fc458da46e10d10dbba, type: 3}
-    volume: 1
+    volume: 0.5
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
     loop: 0
-    mixerGroup: {fileID: 0}
+    playOnAwake: 0
+    mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: ScoreUp
+    clip: {fileID: 8300000, guid: 92540aed0f98de047afd10de750341bd, type: 3}
+    volume: 0.4
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 438c19eb2e695094d974ab1617c0c526, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    playOnAwake: 1
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
     source: {fileID: 0}

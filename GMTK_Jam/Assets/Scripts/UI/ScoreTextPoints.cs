@@ -22,5 +22,6 @@ public class ScoreTextPoints : MonoBehaviour
         text.text = score.ToString();
         if(GetComponent<Animator>())
             GetComponent<Animator>().SetTrigger(ScoreUpdate);
+        AudioManager.instance.Play("ScoreUp");
     }
 }
