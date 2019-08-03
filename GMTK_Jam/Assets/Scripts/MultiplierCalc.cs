@@ -51,7 +51,6 @@ public class MultiplierCalc : MonoBehaviour
             {
                 //Increase by each factor if you break into the next level
                 int increaseBy = (currentEnemiesHit / enemiesPerMultiIncrease) - 1 - currentMultiplier;
-                print("increaseBy " + increaseBy);
                 currentMultiplier += increaseBy;
                 countDownMulti += increaseBy * timePerMultiIncrease;
             }
