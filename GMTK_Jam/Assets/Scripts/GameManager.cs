@@ -14,11 +14,7 @@ public class GameManager
     }
 
     private int score;
-
-    private void Start() {
-        IncreaseScore(0);
-    }
-
+    public int GetScore() { return score; }
     public void IncreaseScore(int amount) {
         score += amount;
 
@@ -28,7 +24,11 @@ public class GameManager
         }
     }
 
-    public int GetScore() {
-        return score;
+    private int basicEnemiesDefeated;
+    public int GetBasicEnemeiesDefeated() { return basicEnemiesDefeated; }
+    public void IncreaseBasicEnemeiesDefeated() { basicEnemiesDefeated += 1; }
+
+    private void Start() {
+        IncreaseScore(0);
     }
 }
