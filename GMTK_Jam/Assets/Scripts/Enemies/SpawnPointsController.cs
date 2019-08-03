@@ -12,7 +12,8 @@ public class SpawnPointsController : MonoBehaviour
 
     private readonly List<Transform> points = new List<Transform>();
 
-    public float mediumEnemyTimer;
+    private bool startedMediumSpawn;
+    private float mediumEnemyTimer;
 
     private System.Random random;
 
@@ -20,6 +21,7 @@ public class SpawnPointsController : MonoBehaviour
     private bool secondSpawnDone, thirdSpawnDone, fourthSpawnDone, fifthSpawnDone;
     private bool secondRandomSpawnLaunched;
 
+    private bool startHardSpawn;
     private float thirdStepTimer;
     private bool tsSecondWave, tsThirdWave, tsFourthWave, tsFifthWave;
 
@@ -38,16 +40,19 @@ public class SpawnPointsController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.GetInstance().GetBasicEnemeiesDefeated() == 5) {
+        if(!startedMediumSpawn && GameManager.GetInstance().GetBasicEnemeiesDefeated() >= 5)
+        {
+            startedMediumSpawn = true;
             StartCoroutine(SpawnMediumEnemies());
         }
-        if(GameManager.GetInstance().GetMediumEnemeiesDefeated() == 5) {
+        if(!startHardSpawn && GameManager.GetInstance().GetMediumEnemeiesDefeated() >= 5)
+        {
+            startHardSpawn = true;
             StartCoroutine(ThirdStepSpawns());
         }
     }
 
     IEnumerator SpawnBasicEnemy() {
-        Debug.Log("basic spawn");
         SpawnEnemy("basic", false, basicEnemyIndex);
 
         yield return new WaitForSeconds(3);
@@ -67,6 +72,7 @@ public class SpawnPointsController : MonoBehaviour
     }
 
     IEnumerator SpawnMediumEnemies() {
+        Debug.Log("Medium spawn");
         mediumEnemyTimer += Time.deltaTime;
 
         if(mediumEnemyTimer > 600) {
@@ -158,11 +164,12 @@ public class SpawnPointsController : MonoBehaviour
         yield return new WaitForSeconds(random.Next(13, 26)); // 13-25s
         SpawnEnemy("hard", true);
 
-        ThirdStepRandomSpawns();
+        yield return ThirdStepRandomSpawns();
     }
 
     IEnumerator ThirdStepSpawns()
     {
+        Debug.Log("Hard spawn");
         thirdStepTimer += Time.deltaTime;
 
         if (thirdStepTimer > 900)
@@ -181,7 +188,7 @@ public class SpawnPointsController : MonoBehaviour
 
                 tsFourthWave = true;
 
-                ThirdStepRandomSpawns();
+                yield return ThirdStepRandomSpawns();
             }
         } else if (thirdStepTimer > 300)
         {
@@ -197,7 +204,7 @@ public class SpawnPointsController : MonoBehaviour
                 tsThirdWave = true;
             }
 
-            ThirdStepSpawns();
+            yield return ThirdStepSpawns();
         } else if (thirdStepTimer > 120)
         {
             // spawn 2
@@ -211,7 +218,7 @@ public class SpawnPointsController : MonoBehaviour
                 tsSecondWave = true;
             }
 
-            ThirdStepSpawns();
+            yield return ThirdStepSpawns();
         }
         else
         {
@@ -220,18 +227,22 @@ public class SpawnPointsController : MonoBehaviour
             
             yield return new WaitForSeconds(13);
 
-            ThirdStepSpawns();
+            yield return ThirdStepSpawns();
         }
     }
 
     void SpawnEnemy(string type, bool isRandom, int index = 0)
     {
-        Debug.Log("spawning");
-        
         var entry = isRandom ? points[random.Next(0, points.Count)] : points[index];
 
         GameObject prefab;
         switch(type) {
+            case "hard":
+                prefab = HardEnemyPrefab;
+                break;
+            case "medium":
+                prefab = MediumEnemyPrefab;
+                break;
             default:
                 prefab = BasicEnemyPrefab;
                 break;

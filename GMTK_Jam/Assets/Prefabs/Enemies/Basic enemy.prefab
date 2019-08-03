@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2221797008993129263}
   - component: {fileID: 1941407043175702191}
   - component: {fileID: 4704556377875383540}
+  - component: {fileID: 4953515787778215783}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Basic enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fa06b7284c983494a9369fca49edb6fb, type: 3}
-  m_Color: {r: 0.8584906, g: 0, b: 0.7235245, a: 1}
+  m_Color: {r: 0.6509434, g: 0.19599248, b: 0.107467055, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -108,3 +109,17 @@ PolygonCollider2D:
     - - {x: 0, y: 0.5}
       - {x: -0.4330127, y: -0.25000003}
       - {x: 0.43301272, y: -0.24999996}
+--- !u!114 &4953515787778215783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315638871377927286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ebf0cb6d827614e9202460c75858a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBasic: 1
+  IsMedium: 0
