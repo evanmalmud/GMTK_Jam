@@ -30,7 +30,7 @@ public class ScorePointsSpawn : MonoBehaviour
         totalScore = +points;
         GameObject instance = Instantiate(ScorePointPrefab, transform);
         instance.transform.position = position;
-        instance.GetComponent<ScorePoint>().SetTextAndDestroy(currentMultiplier.ToString() + "X", points.ToString());
+        instance.GetComponent<ScorePoint>().SetTextAndDestroy(currentMultiplier + "X", points.ToString());
     }
 
     public void resetScore()

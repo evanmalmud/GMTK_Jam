@@ -30,6 +30,8 @@
           <e p="UI" t="Include">
             <e p="LeaderBoardEntry.cs" t="Include" />
             <e p="LeaderBoardHandler.cs" t="Include" />
+            <e p="MultiplierEditorHelper.cs" t="Include" />
+            <e p="MultiplierEntry.cs" t="Include" />
             <e p="PseudoLeaderboardEntry.cs" t="Include" />
             <e p="ScoreCanvasScript.cs" t="Include" />
             <e p="ScoreTextPoints.cs" t="Include" />

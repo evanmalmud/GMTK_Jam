@@ -12,8 +12,5 @@ public class IncreaseDeaths : MonoBehaviour
             GameManager.GetInstance().IncreaseBasicEnemeiesDefeated();
         if (IsMedium)
             GameManager.GetInstance().IncreaseMediumEnemeiesDefeated();
-        
-        Debug.Log("basic : " + GameManager.GetInstance().GetBasicEnemeiesDefeated());
-        Debug.Log("medium : " + GameManager.GetInstance().GetMediumEnemeiesDefeated());
     }
 }

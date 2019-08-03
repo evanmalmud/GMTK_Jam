@@ -5,12 +5,17 @@ using UnityEngine;
 public class SpawnPointsController : MonoBehaviour
 {
     public GameObject BasicEnemyPrefab;
-    // ReSharper disable once NotAccessedField.Global
     public GameObject MediumEnemyPrefab;
-    // ReSharper disable once NotAccessedField.Global
     public GameObject HardEnemyPrefab;
 
-    private readonly List<Transform> points = new List<Transform>();
+    public Transform BasicSpawnPoints;
+    public readonly List<Transform> BasicPoints = new List<Transform>();
+    
+    public Transform MediumSpawnPoints;
+    public readonly List<Transform> MediumPoints = new List<Transform>();
+
+    public Transform HardSpawnPoints;
+    private readonly List<Transform> HardPoints = new List<Transform>();
 
     private bool startedMediumSpawn;
     private float mediumEnemyTimer;
@@ -28,8 +33,14 @@ public class SpawnPointsController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < transform.childCount; i++) {
-            points.Add(transform.GetChild(i));
+        for(int i = 0; i < BasicSpawnPoints.childCount; i++) {
+            BasicPoints.Add(BasicSpawnPoints.GetChild(i));
+        }
+        for(int i = 0; i < MediumSpawnPoints.childCount; i++) {
+            MediumPoints.Add(MediumSpawnPoints.GetChild(i));
+        }
+        for(int i = 0; i < HardSpawnPoints.childCount; i++) {
+            HardPoints.Add(HardSpawnPoints.GetChild(i));
         }
 
         StartCoroutine(nameof(SpawnBasicEnemy));
@@ -57,7 +68,7 @@ public class SpawnPointsController : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         
-        basicEnemyIndex = (basicEnemyIndex + 1)%points.Count;
+        basicEnemyIndex = (basicEnemyIndex + 1)%BasicPoints.Count;
         yield return SpawnBasicEnemy();
     }
 
@@ -79,7 +90,7 @@ public class SpawnPointsController : MonoBehaviour
             // spawn 6
             if(!fifthSpawnDone) {
                 // spawn 6 : 2 in all entries + random spawn every from 7 to 20s
-                for(int i = 0; i < points.Count; i++) {
+                for(int i = 0; i < MediumPoints.Count; i++) {
                     SpawnEnemy("medium", false, i);
                     SpawnEnemy("medium", false, i);
                 }
@@ -94,7 +105,7 @@ public class SpawnPointsController : MonoBehaviour
             // spawn 5
             if(!fifthSpawnDone) {
                 // spawn 5 : 2 in all entries
-                for(int i = 0; i < points.Count; i++) {
+                for(int i = 0; i < MediumPoints.Count; i++) {
                     SpawnEnemy("medium", false, i);
                     SpawnEnemy("medium", false, i);
                 }
@@ -107,7 +118,7 @@ public class SpawnPointsController : MonoBehaviour
             // spawn 4
             if(!fourthSpawnDone) {
                 // spawn 4 : 1 in all entries
-                for(int i = 0; i < points.Count; i++) {
+                for(int i = 0; i < MediumPoints.Count; i++) {
                     SpawnEnemy("medium", false, i);
                 }
 
@@ -119,13 +130,13 @@ public class SpawnPointsController : MonoBehaviour
             // spawn 3
             if(!thirdSpawnDone) {
                 // spawn 3 : 1 in 3 random entries
-                int r1 = random.Next(points.Count);
-                int r2 = random.Next(points.Count);
-                int r3 = random.Next(points.Count);
+                int r1 = random.Next(MediumPoints.Count);
+                int r2 = random.Next(MediumPoints.Count);
+                int r3 = random.Next(MediumPoints.Count);
                 while(r1 == r2)
-                    r2 = random.Next(points.Count);
+                    r2 = random.Next(MediumPoints.Count);
                 while(r1 == r3 || r2 == r3)
-                    r3 = random.Next(points.Count);
+                    r3 = random.Next(MediumPoints.Count);
                 
                 SpawnEnemy("medium", false, r1);
                 SpawnEnemy("medium", false, r2);
@@ -139,10 +150,10 @@ public class SpawnPointsController : MonoBehaviour
             // spawn 2
             if(!secondSpawnDone) {
                 // spawn 2 : 1 in 2 random entries
-                int r1 = random.Next(points.Count);
-                int r2 = random.Next(points.Count);
+                int r1 = random.Next(MediumPoints.Count);
+                int r2 = random.Next(MediumPoints.Count);
                 while(r1 == r2)
-                    r2 = random.Next(points.Count);
+                    r2 = random.Next(MediumPoints.Count);
                 
                 SpawnEnemy("medium", false, r1);
                 SpawnEnemy("medium", false, r2);
@@ -181,7 +192,7 @@ public class SpawnPointsController : MonoBehaviour
             if (!tsFourthWave)
             {
                 // spawn 4 : 2 in all entries + random spawn for 13 to 25 seconds
-                for(int i = 0; i < points.Count; i++) {
+                for(int i = 0; i < HardPoints.Count; i++) {
                     SpawnEnemy("hard", false, i);
                     SpawnEnemy("hard", false, i);
                 }
@@ -196,7 +207,7 @@ public class SpawnPointsController : MonoBehaviour
             if (!tsThirdWave)
             {
                 // spawn 3 : 1 in all entries
-                for(int i = 0; i < points.Count; i++) {
+                for(int i = 0; i < HardPoints.Count; i++) {
                     SpawnEnemy("hard", false, i);
                     SpawnEnemy("hard", false, i);
                 }
@@ -211,7 +222,7 @@ public class SpawnPointsController : MonoBehaviour
             if (!tsSecondWave)
             {
                 // spawn 2 : 1 in all entries
-                for(int i = 0; i < points.Count; i++) {
+                for(int i = 0; i < HardPoints.Count; i++) {
                     SpawnEnemy("hard", false, i);
                 }
 
@@ -233,17 +244,19 @@ public class SpawnPointsController : MonoBehaviour
 
     void SpawnEnemy(string type, bool isRandom, int index = 0)
     {
-        var entry = isRandom ? points[random.Next(0, points.Count)] : points[index];
-
+        Transform entry;
         GameObject prefab;
         switch(type) {
             case "hard":
+                entry = isRandom ? HardPoints[random.Next(HardPoints.Count)] : HardPoints[index];
                 prefab = HardEnemyPrefab;
                 break;
             case "medium":
+                entry = isRandom ? MediumPoints[random.Next(MediumPoints.Count)] : MediumPoints[index];
                 prefab = MediumEnemyPrefab;
                 break;
             default:
+                entry = isRandom ? BasicPoints[random.Next(BasicPoints.Count)] : BasicPoints[index];
                 prefab = BasicEnemyPrefab;
                 break;
         }

@@ -1,30 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public class DestroyOnTouch : MonoBehaviour
 {
 
-    [TagSelector]
-    public string[] TagFilterArray = new string[] { };
+    [TagSelector] public string[] TagFilterArray;
 
     // Start is called before the first frame update
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         foreach (string tag in TagFilterArray)
         {
-            if (collision.gameObject.tag.Equals(tag))
+            if (other.gameObject.tag.Equals(tag))
             {
                 // Destroy
-                Destroy(collision.gameObject);
+                Destroy(other.gameObject);
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
