@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class SpawnPointsController : MonoBehaviour
 {
-    public GameObject EnemyPrefab;
+    public GameObject BasicEnemyPrefab;
+    public GameObject MediumEnemyPrefab;
+    public GameObject HardEnemyPrefab;
 
     private List<Transform> points = new List<Transform>();
 
@@ -18,6 +20,7 @@ public class SpawnPointsController : MonoBehaviour
 
     private int basicEnemyIndex;
     private bool secondSpawnDone, thirdSpawnDone, fourthSpawnDone, fifthSpawnDone;
+    private bool secondRandomSpawnLaunched;
 
     // Start is called before the first frame update
     void Start()
@@ -48,13 +51,21 @@ public class SpawnPointsController : MonoBehaviour
         SpawnBasicEnemy();
     }
 
+    IEnumerator secondRandomSpawn() {
+        SpawnEnemy("medium", true);
+
+        yield return new WaitForSeconds(random.Next(7, 20));
+
+        secondRandomSpawn();
+    }
+
     IEnumerator SpawnMediumEnemies() {
         mediumEnemyTimer += Time.deltaTime;
 
         if(mediumEnemyTimer > 600) {
             // spawn 6
             if(!fifthSpawnDone) {
-                // spawn 6 : 2 in all entries
+                // spawn 6 : 2 in all entries + random spawn every from 7 to 20s
                 for(int i = 0; i < points.Count; i++) {
                     SpawnEnemy("medium", false, i);
                     SpawnEnemy("medium", false, i);
@@ -62,6 +73,7 @@ public class SpawnPointsController : MonoBehaviour
 
                 fifthSpawnDone = true;
 
+                secondRandomSpawn();
                 SpawnMediumEnemies();
             }
         } else if(mediumEnemyTimer > 480) {
@@ -142,6 +154,13 @@ public class SpawnPointsController : MonoBehaviour
             entry = points[index];
         }
 
-        Instantiate(EnemyPrefab, entry.position, Quaternion.identity);
+        GameObject prefab;
+        switch(type) {
+            default:
+                prefab = BasicEnemyPrefab;
+                break;
+        }
+
+        Instantiate(prefab, entry.position, Quaternion.identity);
     }
 }
