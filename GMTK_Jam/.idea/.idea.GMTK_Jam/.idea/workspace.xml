@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74a0afc6-3527-4e63-87de-8c66ca058119" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+    <list default="true" id="74a0afc6-3527-4e63-87de-8c66ca058119" name="Default Changelist" comment="Merge branch 'master' of https://github.com/evanmalmud/GMTK_Jam&#10;&#10;# Conflicts:&#10;#&#9;GMTK_Jam/Assets/Scripts/Bumper.meta">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTK_Jam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTK_Jam/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTK_Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTK_Jam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bumper.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bumper.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/SpawnPointsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SpawnPointsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseFollowMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseFollowMove.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,16 +16,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BulletController.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/SpawnPointsController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="399">
+              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
               <folding>
-                <marker date="1564778485915" expanded="true" signature="6:78" ph="..." />
-                <marker date="1564778485915" expanded="true" signature="125:299" ph="{...}" />
-                <marker date="1564778485915" expanded="true" signature="197:218" ph="{...}" />
-                <marker date="1564778485915" expanded="true" signature="276:297" ph="{...}" />
+                <marker date="1564842187268" expanded="false" signature="6:92" ph="..." />
+                <marker date="1564842187268" expanded="true" signature="144:4828" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="674:888" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="735:793" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="946:1074" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="1023:1068" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="1110:1313" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="1409:1544" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="1583:4370" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="1665:2122" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="1722:2112" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="1859:1982" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="2155:2540" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="2212:2530" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="2314:2437" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="2573:2908" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="2631:2898" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="2733:2804" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="2941:3653" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="2998:3643" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="3685:4202" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="3743:4192" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="4435:4826" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="4484:4553" ph="{...}" />
+                <marker date="1564842187268" expanded="true" signature="4655:4753" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -32,7 +59,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseFollowMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/SpawnPointsController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/SpawnPointsController.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -42,11 +78,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="130" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -54,13 +89,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-        <option name="show-project-names" value="true" />
-      </pane>
       <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Enemies" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
       </pane>
       <pane id="FileSystemExplorer" />
     </panes>
@@ -111,11 +166,12 @@
       <option name="presentableId" value="Default" />
       <updated>1564778589436</updated>
       <workItem from="1564778627295" duration="93000" />
+      <workItem from="1564840961224" duration="1007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93000" />
+    <option name="totallyTimeSpent" value="1100000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -127,19 +183,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986681" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25253063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Unity" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -147,19 +197,31 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/evanmalmud/GMTK_Jam&#10;&#10;# Conflicts:&#10;#&#9;GMTK_Jam/Assets/Scripts/Bumper.meta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/evanmalmud/GMTK_Jam&#10;&#10;# Conflicts:&#10;#&#9;GMTK_Jam/Assets/Scripts/Bumper.meta" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -175,10 +237,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1564778485915" expanded="true" signature="6:78" ph="..." />
-            <marker date="1564778485915" expanded="true" signature="125:299" ph="{...}" />
-            <marker date="1564778485915" expanded="true" signature="197:218" ph="{...}" />
-            <marker date="1564778485915" expanded="true" signature="276:297" ph="{...}" />
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/SpawnPointsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <marker date="1564842187268" expanded="false" signature="6:92" ph="..." />
+            <marker date="1564842187268" expanded="true" signature="144:4828" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="674:888" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="735:793" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="946:1074" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="1023:1068" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="1110:1313" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="1409:1544" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="1583:4370" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="1665:2122" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="1722:2112" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="1859:1982" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="2155:2540" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="2212:2530" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="2314:2437" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="2573:2908" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="2631:2898" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="2733:2804" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="2941:3653" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="2998:3643" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="3685:4202" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="3743:4192" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="4435:4826" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="4484:4553" ph="{...}" />
+            <marker date="1564842187268" expanded="true" signature="4655:4753" ph="{...}" />
           </folding>
         </state>
       </provider>

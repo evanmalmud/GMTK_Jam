@@ -28,6 +28,11 @@ public class GameManager
     public int GetBasicEnemeiesDefeated() { return basicEnemiesDefeated; }
     public void IncreaseBasicEnemeiesDefeated() { basicEnemiesDefeated += 1; }
 
+    private int mediumEnemiesDefeated;
+    public int GetMediumEnemeiesDefeated() { return mediumEnemiesDefeated; }
+    public void IncreaseMediumEnemeiesDefeated() { mediumEnemiesDefeated += 1; }
+
+
     private void Start() {
         IncreaseScore(0);
     }

@@ -29,7 +29,7 @@ public class SpawnPointsController : MonoBehaviour
             points.Add(transform.GetChild(i));
         }
 
-        StartCoroutine("SpawnBasicEnemy");
+        StartCoroutine(nameof(SpawnBasicEnemy));
 
         random = new System.Random();
     }
@@ -51,12 +51,13 @@ public class SpawnPointsController : MonoBehaviour
         SpawnBasicEnemy();
     }
 
-    IEnumerator secondRandomSpawn() {
+    // ReSharper disable once FunctionRecursiveOnAllPaths
+    IEnumerator SecondRandomSpawn() {
         SpawnEnemy("medium", true);
 
         yield return new WaitForSeconds(random.Next(7, 20));
 
-        secondRandomSpawn();
+        SecondRandomSpawn();
     }
 
     IEnumerator SpawnMediumEnemies() {
@@ -73,7 +74,7 @@ public class SpawnPointsController : MonoBehaviour
 
                 fifthSpawnDone = true;
 
-                secondRandomSpawn();
+                SecondRandomSpawn();
                 SpawnMediumEnemies();
             }
         } else if(mediumEnemyTimer > 480) {

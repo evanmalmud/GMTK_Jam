@@ -213,5 +213,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 350
   RotateSpeed: 5000
-  Diamond: {fileID: 1560049825}
-  disableMovementDefaultVal: 1
+  bounce: 0
