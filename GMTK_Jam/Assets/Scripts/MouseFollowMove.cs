@@ -7,6 +7,9 @@ public class MouseFollowMove : MonoBehaviour
 {
     [SerializeField] float MoveSpeed = 350f;
     [SerializeField] float RotateSpeed = 2000f;
+    
+    GameObject Diamond;
+
     public int bounce;
     Rigidbody2D rb;
 
@@ -18,6 +21,7 @@ public class MouseFollowMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Diamond = transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
@@ -29,6 +33,7 @@ public class MouseFollowMove : MonoBehaviour
             if(disableMovementTimer <= 0)
             {
                 disableMovement = false;
+                Diamond.SetActive(true);
             }
         }
         else
@@ -46,6 +51,7 @@ public class MouseFollowMove : MonoBehaviour
         //rb.AddForce(posDifference * bounce);
         //disable movement
         disableMovement = true;
+        Diamond.SetActive(false);
 
         disableMovementTimer = disableMovementDefaultVal;
         print("test");
