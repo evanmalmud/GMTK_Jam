@@ -20,7 +20,9 @@ public class ScoreCanvasScript : MonoBehaviour
 
     [System.Obsolete]
     IEnumerator DownLoadHighScoresFromDatabase() {
+#pragma warning disable 0618
         WWW request = new WWW("http://dreamlo.com/lb/5d4548ac7682801758e56f55/pipe/0/" + WWW.EscapeURL(numberOfResults.ToString()));
+#pragma warning restore 0618
         yield return request;
 
         if (string.IsNullOrEmpty (request.error)) {
@@ -51,8 +53,10 @@ public class ScoreCanvasScript : MonoBehaviour
     }
     
     IEnumerator UploadNewHighscore(string username, int score) {
-		WWW www = new WWW("http://dreamlo.com/lb/uEuQco4nukidyS_1ZkyNqgcO6gNWYLD0C0baODBF1ebA/add/" + WWW.EscapeURL(username) + "/" + score);
-		yield return www;
+#pragma warning disable 0618
+        WWW www = new WWW("http://dreamlo.com/lb/uEuQco4nukidyS_1ZkyNqgcO6gNWYLD0C0baODBF1ebA/add/" + WWW.EscapeURL(username) + "/" + score);
+#pragma warning restore 0618
+        yield return www;
 
 		if (string.IsNullOrEmpty(www.error)) {
 			print ("Upload Successful");

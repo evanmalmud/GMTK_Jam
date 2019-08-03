@@ -8,11 +8,11 @@ public class BumperDisableOnHit : MonoBehaviour
     bool disabled = false;
     float disabledCount = 0.0f;
 
-    Collider2D collider;
+    private Collider2D collider2d;
 
     private void Start()
     {
-        collider = GetComponent<Collider2D>();
+        collider2d = GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -32,7 +32,7 @@ public class BumperDisableOnHit : MonoBehaviour
 
     void ToggleCollider(bool isOn)
     {
-        collider.enabled = isOn;
+        collider2d.enabled = isOn;
     }
 
     // Update is called once per frame
