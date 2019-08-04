@@ -7,7 +7,7 @@ public class DestroyOnTouch : MonoBehaviour
     [TagSelector] public string[] TagFilterArray;
 
     // Start is called before the first frame update
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         foreach (string tag in TagFilterArray)
         {

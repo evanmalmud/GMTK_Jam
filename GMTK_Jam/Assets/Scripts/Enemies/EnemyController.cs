@@ -10,8 +10,6 @@ public class EnemyController : MonoBehaviour
 
     public float Speed;
 
-    public int points;
-
     private bool MediumAlreadyHit;
 
     public Transform target;
@@ -34,8 +32,6 @@ public class EnemyController : MonoBehaviour
             GameManager.GetInstance().IncreaseBasicEnemeiesDefeated();
         if (IsMedium)
             GameManager.GetInstance().IncreaseMediumEnemeiesDefeated();
-
-        GameManager.GetInstance().IncreaseScore(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y), points);
         //Debug.Log("basic : " + GameManager.GetInstance().GetBasicEnemeiesDefeated());
         //Debug.Log("medium : " + GameManager.GetInstance().GetMediumEnemeiesDefeated());
     }

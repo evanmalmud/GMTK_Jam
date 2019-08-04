@@ -8,6 +8,10 @@ public class GameManager
 
     private int score;
 
+    private bool isGameActive;
+    public bool IsGameActive() { return isGameActive; }
+    //TODO: Use this to start spawners
+
     private int basicEnemiesDefeated;
     public int GetBasicEnemeiesDefeated() { return basicEnemiesDefeated; }
     public void IncreaseBasicEnemeiesDefeated() { basicEnemiesDefeated += 1; }
@@ -30,7 +34,7 @@ public class GameManager
         score = 0;
     }
 
-    public void IncreaseScore(Vector2 position, int amount)
+    public void IncreaseScore(Vector3 position, int amount)
     {
         GameObject.FindObjectOfType<MultiplierCalc>().UpdateMultiplier(1);
 
@@ -43,5 +47,16 @@ public class GameManager
 
         if (GameObject.FindObjectOfType<ScorePointsSpawn>())
             GameObject.FindObjectOfType<ScorePointsSpawn>().AddScorePoint(position, amount);
+    }
+
+    public void StartGame()
+    {
+        isGameActive = true;
+    }
+
+    public void EndGame()
+    {
+        isGameActive = false;
+        GameObject.FindObjectOfType<MenuController>().EndGame();
     }
 }

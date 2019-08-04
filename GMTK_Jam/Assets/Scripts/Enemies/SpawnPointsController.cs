@@ -8,6 +8,7 @@ public class SpawnPointsController : MonoBehaviour
     public GameObject MediumEnemyPrefab;
     public GameObject HardEnemyPrefab;
 
+    
     public Transform BasicSpawnPoints;
     public readonly List<Transform> BasicPoints = new List<Transform>();
     
@@ -30,6 +31,10 @@ public class SpawnPointsController : MonoBehaviour
     private float thirdStepTimer;
     private bool tsSecondWave, tsThirdWave, tsFourthWave, tsFifthWave;
 
+    private bool basicSpawnRunning = false;
+
+    private List<GameObject> allEnemies = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,15 +48,37 @@ public class SpawnPointsController : MonoBehaviour
             HardPoints.Add(HardSpawnPoints.GetChild(i));
         }
 
-        StartCoroutine(nameof(SpawnBasicEnemy));
-
         random = new System.Random();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!startedMediumSpawn && GameManager.GetInstance().GetBasicEnemeiesDefeated() >= 5)
+        if (!GameManager.GetInstance().IsGameActive())
+        {
+            //Kill all coroutines
+            StopCoroutine(nameof(SpawnBasicEnemy));
+            StopCoroutine(nameof(SecondRandomSpawn));
+            StopCoroutine(nameof(SpawnMediumEnemies));
+            StopCoroutine(nameof(ThirdStepRandomSpawns));
+            StopCoroutine(nameof(ThirdStepSpawns));
+            basicSpawnRunning = false;
+
+            //Kill all existing enemies
+            foreach (GameObject go in allEnemies)
+                Destroy(go);
+            return;
+        }
+
+        //If couroutines arent running start them
+        if(!basicSpawnRunning)
+        {
+            StartCoroutine(nameof(SpawnBasicEnemy));
+        }
+
+
+
+        if (!startedMediumSpawn && GameManager.GetInstance().GetBasicEnemeiesDefeated() >= 5)
         {
             startedMediumSpawn = true;
             StartCoroutine(SpawnMediumEnemies());
@@ -64,6 +91,7 @@ public class SpawnPointsController : MonoBehaviour
     }
 
     IEnumerator SpawnBasicEnemy() {
+        basicSpawnRunning = true;
         SpawnEnemy("basic", false, basicEnemyIndex);
 
         yield return new WaitForSeconds(3);
@@ -261,6 +289,8 @@ public class SpawnPointsController : MonoBehaviour
                 break;
         }
 
-        Instantiate(prefab, entry.position, Quaternion.identity);
+        GameObject spawn = Instantiate(prefab, entry.position, Quaternion.identity);
+        allEnemies.Add(spawn);
+
     }
 }

@@ -111,5 +111,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbec4d6913909064aa7e4a9137dacf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScorePointPrefab: {fileID: 4722022032067551779, guid: 45a543223400e2a48b7faf01399082f2,
-    type: 3}
+  ScorePointPrefab: {fileID: 0}

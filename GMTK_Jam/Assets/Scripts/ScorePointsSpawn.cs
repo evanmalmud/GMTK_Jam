@@ -7,10 +7,12 @@ public class ScorePointsSpawn : MonoBehaviour
 
     public GameObject ScorePointPrefab;
 
-    public void AddScorePoint(Vector2 position, int points)
+    public void AddScorePoint(Vector3 position, int points)
     {
+        print("addScorePoint Called");
         GameObject instance = Instantiate(ScorePointPrefab, transform);
-        instance.transform.position = position;
+        //TODO Issue with UI render distance. Taking the easy fix
+        instance.transform.position = new Vector3( position.x, position.y, -10);
         instance.GetComponent<ScorePoint>().SetTextAndDestroy(null, points.ToString());
     }
 }

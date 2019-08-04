@@ -25,7 +25,11 @@ public class MouseFollowMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(disableMovement)
+        if(!GameManager.GetInstance().IsGameActive())
+        {
+            return;
+        }
+        if (disableMovement)
         {
             disableMovementTimer -= Time.deltaTime;
             if(disableMovementTimer <= 0)
@@ -43,9 +47,16 @@ public class MouseFollowMove : MonoBehaviour
             // Set the velocity - Currently this is just a base speed, 
             // but once things are calling the Speed up/down functions this will change
             rb.velocity = transform.up * MoveSpeed * Time.deltaTime;
-
+            //Vector3 vector2 = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, -7.0f);
+            //print("mouse position " + Input.mousePosition);
+            //print("vector2: " + vector2);
+            Vector3 vector = new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z - Camera.main.transform.position.z);
+            //Debug.Log(Camera.main.ScreenToWorldPoint(vector));
+            //print(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             // This gets the difference in world position from the mouse to the gameobject this script is on
-            Vector3 targetVector = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            Vector3 mouseVector = Camera.main.ScreenToWorldPoint(vector);
+            Vector3 targetVector = new Vector3(mouseVector.x, mouseVector.y, transform.position.z) - transform.position;
+
 
             // Cross product takes two vectors and finds the perpendicular vector
             // For example if you had the two vectors (1,0,0) and (0,1,0) the Cross would be (0,0,1)
