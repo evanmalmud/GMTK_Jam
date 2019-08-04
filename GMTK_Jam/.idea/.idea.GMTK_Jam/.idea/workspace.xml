@@ -2,17 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74a0afc6-3527-4e63-87de-8c66ca058119" name="Default Changelist" comment="Merge branch 'master' of https://github.com/evanmalmud/GMTK_Jam&#10;&#10;# Conflicts:&#10;#&#9;GMTK_Jam/Assets/Scripts/Bumper.meta">
-      <change beforePath="$PROJECT_DIR$/Assets/Music/OnlyOne_Menu_V1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Music/OnlyOne_Menu_V1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music/Game Over.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music/Game Over.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music/Yeahaa.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music/Yeahaa.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music/Yes.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music/Yes.wav.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MultiplierCalc+AudioManager+ScoreRequests.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MultiplierCalc+AudioManager+ScoreRequests.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/LeaderBoard/LeaderboardMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/LeaderBoard/LeaderboardMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/PseudoLeaderboardEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/PseudoLeaderboardEntry.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Unnamed">
+      <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts" module="riderModule" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI" module="riderModule" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard" module="riderModule" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/ScoreRequests.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/LeaderBoardEntry.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/ScoreCanvasScript.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/LeaderBoardHandler.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/ScoreRequests.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/LeaderBoardEntry.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/PseudoLeaderboardEntry.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/ScoreCanvasScript.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/LeaderBoardHandler.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/PseudoLeaderboardEntry.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers" module="riderModule" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/1X.asset" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/2X.asset" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/3X.asset" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/4X.asset" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/5X.asset" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/6X.asset" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/7X.asset" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/8X.asset" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/9X.asset" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/1X.asset.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/2X.asset.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/3X.asset.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/4X.asset.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/5X.asset.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/6X.asset.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/7X.asset.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/8X.asset.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers/9X.asset.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/Multipliers.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/MusicSettings.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/MenuController.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/MultiplierCalc.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/MultiplierText.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/ScoreTextPoints.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/MusicSettings.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/MenuController.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/MultiplierCalc.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/MultiplierText.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI/ScoreTextPoints.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Sound" module="riderModule" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Sound/Sound.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Sound/Sound.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Sound/AudioManager.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Sound/NewAudioMixer.mixer" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Sound/AudioManager.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Sound/NewAudioMixer.mixer.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player" module="riderModule" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/WASDMove.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerDeath.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/InitialForce.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/WASDMove.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/DestroyOnTouch.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseFollowMove.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerDeath.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/InitialForce.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/DestroyOnTouch.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseFollowMove.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies" module="riderModule" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyScore.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemies Spawner.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyScore.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemies Spawner.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyController.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies/SpawnPointsController.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies/SpawnPointsController.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/UI.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/MainMenu" module="riderModule" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuLoad.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuLoad.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Sound.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Bumper+Wall" module="riderModule" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Bumper+Wall/WallHit.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Bumper+Wall/BumperScore.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Bumper+Wall/WallHit.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Bumper+Wall/BumperScore.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Bumper+Wall/BumperDisableOnHit.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Bumper+Wall/BumperDisableOnHit.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Player.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Enemies.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/ScorePoint.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/Bumper+Wall.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/ScorePoint.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/ScorePointsSpawn.cs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Assets/Scripts/ScorePointsSpawn.cs.meta" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -75,7 +184,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/ScoreRequests.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
@@ -92,6 +201,48 @@
                 <marker date="1564919205577" expanded="true" signature="1522:1600" ph="{...}" />
                 <marker date="1564919205577" expanded="true" signature="1667:1740" ph="{...}" />
                 <marker date="1564919205577" expanded="true" signature="1774:1836" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Sound/AudioManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+              <folding>
+                <marker date="1564908907783" expanded="false" signature="6:57" ph="..." />
+                <marker date="1564908907783" expanded="true" signature="100:1762" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="292:702" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="319:351" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="358:420" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="451:699" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="735:1132" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="815:890" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="1166:1347" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="1246:1321" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="1381:1561" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="1461:1536" ph="{...}" />
+                <marker date="1564908907783" expanded="true" signature="1598:1760" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/PseudoLeaderboardEntry.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+              <folding>
+                <marker date="1564924651616" expanded="false" signature="6:91" ph="..." />
+                <marker date="1564924651616" expanded="true" signature="187:863" ph="{...}" />
+                <marker date="1564924651616" expanded="true" signature="293:353" ph="{...}" />
+                <marker date="1564924651616" expanded="true" signature="398:795" ph="{...}" />
+                <marker date="1564924651616" expanded="true" signature="567:702" ph="{...}" />
+                <marker date="1564924651616" expanded="true" signature="625:692" ph="{...}" />
+                <marker date="1564924651616" expanded="true" signature="827:861" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -144,11 +295,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MusicSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sound/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScorePoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/PseudoLeaderboardEntry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/ScoreRequests.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/ScoreCanvasScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/PseudoLeaderboardEntry.cs" />
       </list>
     </option>
   </component>
@@ -168,10 +319,40 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Sound" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
@@ -221,12 +402,12 @@
       <updated>1564778589436</updated>
       <workItem from="1564778627295" duration="93000" />
       <workItem from="1564840961224" duration="20846000" />
-      <workItem from="1564902789907" duration="10896000" />
+      <workItem from="1564902789907" duration="11872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31835000" />
+    <option name="totallyTimeSpent" value="32811000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -238,10 +419,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25253063" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25253063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -443,20 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/PseudoLeaderboardEntry.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <marker date="1564917723017" expanded="false" signature="6:91" ph="..." />
-            <marker date="1564917723017" expanded="true" signature="187:599" ph="{...}" />
-            <marker date="1564917723017" expanded="true" signature="293:353" ph="{...}" />
-            <marker date="1564917723017" expanded="true" signature="398:531" ph="{...}" />
-            <marker date="1564917723017" expanded="true" signature="563:597" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/MusicSettings.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -470,28 +637,6 @@
             <marker date="1564908268961" expanded="true" signature="1228:1474" ph="{...}" />
             <marker date="1564908268961" expanded="true" signature="1264:1327" ph="{...}" />
             <marker date="1564908268961" expanded="true" signature="1332:1393" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Sound/AudioManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
-          <folding>
-            <marker date="1564908907783" expanded="false" signature="6:57" ph="..." />
-            <marker date="1564908907783" expanded="true" signature="100:1762" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="292:702" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="319:351" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="358:420" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="451:699" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="735:1132" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="815:890" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="1166:1347" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="1246:1321" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="1381:1561" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="1461:1536" ph="{...}" />
-            <marker date="1564908907783" expanded="true" signature="1598:1760" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -594,6 +739,44 @@
             <marker date="1564919205577" expanded="true" signature="1522:1600" ph="{...}" />
             <marker date="1564919205577" expanded="true" signature="1667:1740" ph="{...}" />
             <marker date="1564919205577" expanded="true" signature="1774:1836" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Sound/AudioManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+          <folding>
+            <marker date="1564908907783" expanded="false" signature="6:57" ph="..." />
+            <marker date="1564908907783" expanded="true" signature="100:1762" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="292:702" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="319:351" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="358:420" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="451:699" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="735:1132" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="815:890" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="1166:1347" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="1246:1321" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="1381:1561" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="1461:1536" ph="{...}" />
+            <marker date="1564908907783" expanded="true" signature="1598:1760" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/LeaderBoard/PseudoLeaderboardEntry.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding>
+            <marker date="1564924651616" expanded="false" signature="6:91" ph="..." />
+            <marker date="1564924651616" expanded="true" signature="187:863" ph="{...}" />
+            <marker date="1564924651616" expanded="true" signature="293:353" ph="{...}" />
+            <marker date="1564924651616" expanded="true" signature="398:795" ph="{...}" />
+            <marker date="1564924651616" expanded="true" signature="567:702" ph="{...}" />
+            <marker date="1564924651616" expanded="true" signature="625:692" ph="{...}" />
+            <marker date="1564924651616" expanded="true" signature="827:861" ph="{...}" />
           </folding>
         </state>
       </provider>

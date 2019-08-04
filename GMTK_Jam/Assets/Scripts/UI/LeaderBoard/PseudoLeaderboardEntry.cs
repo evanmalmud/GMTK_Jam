@@ -15,7 +15,18 @@ public class PseudoLeaderboardEntry : MonoBehaviour
 
     public void OnValueChange(string value)
     {
-        input.text = input.text.ToUpper();
+        value = value.ToUpper();
+        
+        // cleaning with only numeric characters
+        string cleanString = "";
+        foreach (char letter in value)
+        {
+            if (letter >= 'A' && letter <= 'Z')
+            {
+                cleanString += letter;
+            }
+        }
+        
         if (value.Length > 3)
             input.text = value.Substring(0, 3);
     }
