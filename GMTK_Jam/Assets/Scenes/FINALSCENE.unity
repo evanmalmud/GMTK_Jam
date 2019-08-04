@@ -17136,7 +17136,7 @@ PrefabInstance:
     - target: {fileID: 3273435555800790479, guid: 339dfa4630300904ab66d7b22f60f0f1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3273435555800790516, guid: 339dfa4630300904ab66d7b22f60f0f1,
         type: 3}
@@ -24749,7 +24749,7 @@ PrefabInstance:
     - target: {fileID: 4638951745771589765, guid: 46f3bb25701490a41ab3a5b397c7ae69,
         type: 3}
       propertyPath: timePerMultiIncrease
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4638951745771589765, guid: 46f3bb25701490a41ab3a5b397c7ae69,
         type: 3}
@@ -28548,10 +28548,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8417608279086685759, guid: f8d39a56024cf9f4f9fb007af57f3050,
+    - target: {fileID: 6484865461434517785, guid: f8d39a56024cf9f4f9fb007af57f3050,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552223858543938270, guid: f8d39a56024cf9f4f9fb007af57f3050,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552223858543938270, guid: f8d39a56024cf9f4f9fb007af57f3050,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552223858543938270, guid: f8d39a56024cf9f4f9fb007af57f3050,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006771273, guid: f8d39a56024cf9f4f9fb007af57f3050, type: 3}
+      propertyPath: disableMovementDefaultVal
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8d39a56024cf9f4f9fb007af57f3050, type: 3}

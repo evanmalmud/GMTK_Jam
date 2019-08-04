@@ -8,6 +8,8 @@ public class MouseFollowMove : MonoBehaviour
     [SerializeField] float MoveSpeed = 350f;
     [SerializeField] float RotateSpeed = 2000f;
 
+
+    private float disabledRotSpeed = 10000f;
     public GameObject Diamond;
 
     Rigidbody2D rb;
@@ -40,6 +42,11 @@ public class MouseFollowMove : MonoBehaviour
             }
             //Using the velocity from the bouce to change the direction of the bullet
             vector = rb.velocity;
+
+            float rotatingIndex = Vector3.Cross(vector, transform.up).z;
+
+            // Then we add this to the angular velocity and multiplyit by how fast we want to turn.
+            rb.angularVelocity = -1 * rotatingIndex * disabledRotSpeed * Time.deltaTime;
         }
         else
         {
@@ -60,7 +67,7 @@ public class MouseFollowMove : MonoBehaviour
             //print(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             // This gets the difference in world position from the mouse to the gameobject this script is on
             vector = new Vector3(screenToWorld.x, screenToWorld.y, transform.position.z) - transform.position;
-        }
+
             // Cross product takes two vectors and finds the perpendicular vector
             // For example if you had the two vectors (1,0,0) and (0,1,0) the Cross would be (0,0,1)
             // Then once we have the cross product we are only taking the z value. 
@@ -70,6 +77,7 @@ public class MouseFollowMove : MonoBehaviour
 
             // Then we add this to the angular velocity and multiplyit by how fast we want to turn.
             rb.angularVelocity = -1 * rotatingIndex * RotateSpeed * Time.deltaTime;
+        }
 
         
     }

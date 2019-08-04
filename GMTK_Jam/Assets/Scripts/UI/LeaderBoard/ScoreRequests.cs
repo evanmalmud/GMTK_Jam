@@ -45,7 +45,7 @@ public class ScoreRequests : MonoBehaviour
 
         if (string.IsNullOrEmpty(www.error)) {
             print ("Upload Successful");
-            Debug.Log(www.text);
+            //Debug.Log(www.text);
             DownloadScores();
         }
         else {

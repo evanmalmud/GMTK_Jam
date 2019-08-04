@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy3
+  m_Name: BigBully
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 2
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: a25380d890a66a344901e0983cdeb188, type: 3}
+        m_Texture: {fileID: 2800000, guid: e557c17ed4de7fa40a839f4f13b9272d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -36,19 +36,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 835f4d7b0a567db419a3b30a08609f62, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3f875b86561d63246a97d3249b810ea1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 835f4d7b0a567db419a3b30a08609f62, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3f875b86561d63246a97d3249b810ea1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: c25d0587377096d43a7b0a55b0bd07f8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 885f3c23a8da5ca419a36c5c29bf29b4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 9874829fa34397d489a4a72ab1cfb9d7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3ca459267109e7846ae4e13565436ed7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -60,12 +60,12 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlossMapScale: 0.386
+    - _GlossMapScale: 0.592
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
-    - _OcclusionStrength: 1
+    - _OcclusionStrength: 0.078
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -74,4 +74,4 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0.32987696, g: 0.32987696, b: 0.32987696, a: 1}
+    - _EmissionColor: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
