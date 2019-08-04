@@ -35,12 +35,12 @@ public class MultiplierCalc : MonoBehaviour
     public void UpdateMultiplier(int newDestroys)
     {
         currentEnemiesHit += newDestroys;
-        if(currentMultiplier == 1 && currentEnemiesHit == 1)
+        if(currentMultiplier == 1 && currentEnemiesHit < enemiesPerMultiIncrease)
         {
             //Reset the counter because it is your first hit
             countDownMulti = timePerMultiIncrease;
         }
-        else if ((currentEnemiesHit / enemiesPerMultiIncrease) - 1  > currentMultiplier)
+        else if ((currentEnemiesHit - (enemiesPerMultiIncrease * currentMultiplier))  > 0)
         {
             if (currentMultiplier >= maxMultiplier)
             {
@@ -50,7 +50,7 @@ public class MultiplierCalc : MonoBehaviour
             else
             {
                 //Increase by each factor if you break into the next level
-                int increaseBy = (currentEnemiesHit / enemiesPerMultiIncrease) - 1 - currentMultiplier;
+                int increaseBy = (currentEnemiesHit / enemiesPerMultiIncrease) + 1 - currentMultiplier;
                 currentMultiplier += increaseBy;
                 countDownMulti += increaseBy * timePerMultiIncrease;
             }
