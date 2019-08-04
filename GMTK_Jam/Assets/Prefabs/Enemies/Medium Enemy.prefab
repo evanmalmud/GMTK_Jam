@@ -7,11 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4547692089698776163, guid: a7f8c6724b88cb740ae67de4f898169d,
-        type: 3}
-      propertyPath: ScorePoints
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2315638871377927286, guid: a7f8c6724b88cb740ae67de4f898169d,
         type: 3}
       propertyPath: m_Name
@@ -106,6 +101,16 @@ PrefabInstance:
         type: 3}
       propertyPath: Speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547692089698776163, guid: a7f8c6724b88cb740ae67de4f898169d,
+        type: 3}
+      propertyPath: ScorePoints
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547692089698776163, guid: a7f8c6724b88cb740ae67de4f898169d,
+        type: 3}
+      propertyPath: IsMedium
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 494867712388825288, guid: a7f8c6724b88cb740ae67de4f898169d,
         type: 3}

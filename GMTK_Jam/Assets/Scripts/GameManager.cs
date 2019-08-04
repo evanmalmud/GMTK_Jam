@@ -36,7 +36,8 @@ public class GameManager
 
     public void IncreaseScore(Vector3 position, int amount)
     {
-        GameObject.FindObjectOfType<MultiplierCalc>().UpdateMultiplier(1);
+        if (GameObject.FindObjectOfType<MultiplierCalc>())
+            GameObject.FindObjectOfType<MultiplierCalc>().UpdateMultiplier(1);
 
         score += amount * GameObject.FindObjectOfType<MultiplierCalc>().currentMultiplier;
         UpdateScore(score);
@@ -48,6 +49,8 @@ public class GameManager
     public void StartGame()
     {
         ResetScore();
+        if (GameObject.FindObjectOfType<SpawnPointsController>())
+            GameObject.FindObjectOfType<SpawnPointsController>().ResetBasicEnemyCount();
         isGameActive = true;
     }
 

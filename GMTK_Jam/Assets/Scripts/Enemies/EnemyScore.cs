@@ -16,7 +16,6 @@ public class EnemyScore : MonoBehaviour
         // very easy way for double hit
         if (other.collider.CompareTag(PlayerTag))
         {
-            Debug.Log("touched");
             //TODO Enemy hurt Sounds
             //AudioManager.instance.Play("Enemy " + new System.Random().Next(2));
 
@@ -25,9 +24,7 @@ public class EnemyScore : MonoBehaviour
                 IsMedium = false;
             } else
             {
-                Debug.Log("died");
                 GameManager.GetInstance().IncreaseScore(other.GetContact(0).point, ScorePoints);
-
                 Destroy(gameObject);
             }
         }

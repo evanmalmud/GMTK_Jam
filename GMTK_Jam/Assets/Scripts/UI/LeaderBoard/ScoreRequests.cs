@@ -16,7 +16,7 @@ public class ScoreRequests : MonoBehaviour
         
         #pragma warning disable 0618
         WWW request = new WWW("http://dreamlo.com/lb/5d4548ac7682801758e56f55/pipe/0/7");
-        Debug.Log("Started Downloading leaderboard");
+        //Debug.Log("Started Downloading leaderboard");
         #pragma warning restore 0618
         
         yield return request;
