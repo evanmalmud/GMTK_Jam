@@ -90,6 +90,10 @@ public class MenuController : MonoBehaviour
         SettingsMenu.SetActive(display);
         AudioManager.instance.SetLowpass(display);
         Time.timeScale = display ? 0f : 1f;
+        if (!GameManager.GetInstance().IsGameActive())
+        {
+            Time.timeScale = 0f;
+        }
     }
 
     public void PlayCLickSound()
