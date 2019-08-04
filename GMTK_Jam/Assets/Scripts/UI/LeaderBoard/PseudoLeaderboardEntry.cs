@@ -7,10 +7,13 @@ using TMPro;
 public class PseudoLeaderboardEntry : MonoBehaviour
 {
     private TMP_InputField input;
+
+    private string PseudoKey = "Pseudo";
     // Start is called before the first frame update
     void Start()
     {
         input = GetComponent<TMP_InputField>();
+        input.text = PlayerPrefs.GetString(PseudoKey, "");
     }
 
     public void OnValueChange(string value)
@@ -33,7 +36,8 @@ public class PseudoLeaderboardEntry : MonoBehaviour
         input.text = cleanString;
     }
 
-    public string GetPseudo() {
+    public string GetPseudoAndSave() {
+        PlayerPrefs.SetString(PseudoKey, input.text);
         return input.text;
     }
 }
