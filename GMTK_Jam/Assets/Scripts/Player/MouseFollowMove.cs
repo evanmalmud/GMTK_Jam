@@ -25,18 +25,21 @@ public class MouseFollowMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(!GameManager.GetInstance().IsGameActive())
+        Vector3 vector;
+        if (!GameManager.GetInstance().IsGameActive())
         {
             return;
         }
         if (disableMovement)
         {
             disableMovementTimer -= Time.deltaTime;
-            if(disableMovementTimer <= 0)
+            if (disableMovementTimer <= 0)
             {
                 disableMovement = false;
-                Diamond.SetActive(true);
+                //Diamond.SetActive(true);
             }
+            //Using the velocity from the bouce to change the direction of the bullet
+            vector = rb.velocity;
         }
         else
         {
@@ -47,27 +50,28 @@ public class MouseFollowMove : MonoBehaviour
             // Set the velocity - Currently this is just a base speed, 
             // but once things are calling the Speed up/down functions this will change
             rb.velocity = transform.up * MoveSpeed * Time.deltaTime;
+
             //Vector3 vector2 = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, -7.0f);
             //print("mouse position " + Input.mousePosition);
             //print("vector2: " + vector2);
-            Vector3 vector = new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z - Camera.main.transform.position.z);
+            Vector3 mouseVector = new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z - Camera.main.transform.position.z);
+            Vector3 screenToWorld = Camera.main.ScreenToWorldPoint(mouseVector);
             //Debug.Log(Camera.main.ScreenToWorldPoint(vector));
             //print(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             // This gets the difference in world position from the mouse to the gameobject this script is on
-            Vector3 mouseVector = Camera.main.ScreenToWorldPoint(vector);
-            Vector3 targetVector = new Vector3(mouseVector.x, mouseVector.y, transform.position.z) - transform.position;
-
-
+            vector = new Vector3(screenToWorld.x, screenToWorld.y, transform.position.z) - transform.position;
+        }
             // Cross product takes two vectors and finds the perpendicular vector
             // For example if you had the two vectors (1,0,0) and (0,1,0) the Cross would be (0,0,1)
             // Then once we have the cross product we are only taking the z value. 
             // This gives us a neumerical value to use for the angle instead of a vector2 or 3
             //Debug.LogFormat("targetVector: {0} - Cross: {1}", targetVector, Vector3.Cross(targetVector, transform.up));
-            float rotatingIndex = Vector3.Cross(targetVector, transform.up).z;
+            float rotatingIndex = Vector3.Cross(vector, transform.up).z;
 
             // Then we add this to the angular velocity and multiplyit by how fast we want to turn.
             rb.angularVelocity = -1 * rotatingIndex * RotateSpeed * Time.deltaTime;
-        }
+
+        
     }
 
     [TagSelector] public string[] TagFilterArray;
@@ -80,7 +84,7 @@ public class MouseFollowMove : MonoBehaviour
             if (other.gameObject.tag.Equals(tag))
             {
                 disableMovement = true;
-                Diamond.SetActive(false);
+                //Diamond.SetActive(false);
                 disableMovementTimer = disableMovementDefaultVal;
             }
         }
