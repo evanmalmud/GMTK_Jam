@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
-[CustomPropertyDrawer(typeof(TagSelectorAttribute))]
 
+#if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(TagSelectorAttribute))]
 public class TagSelectorPropertyDrawer : PropertyDrawer
 {
@@ -72,3 +72,4 @@ public class TagSelectorPropertyDrawer : PropertyDrawer
         }
     }
 }
+#endif
