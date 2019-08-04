@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 401121063}
   m_Layer: 9
   m_Name: 2D
-  m_TagString: Enemy
+  m_TagString: BasicEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,8 @@ MonoBehaviour:
   IsMedium: 0
   Speed: 7
   target: {fileID: 0}
-  deathLength: 3
+  deathLength: 2
+  playerDeathLength: 1
 --- !u!58 &401121064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -149,7 +150,7 @@ GameObject:
   - component: {fileID: 685325712014489097}
   m_Layer: 9
   m_Name: Enemy1
-  m_TagString: Enemy
+  m_TagString: BasicEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
