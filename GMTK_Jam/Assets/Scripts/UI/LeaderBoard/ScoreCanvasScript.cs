@@ -43,7 +43,7 @@ public class ScoreCanvasScript : MonoBehaviour
 
     }
     public void OnEnterScore() {
-        string pseudo = FindObjectOfType<PseudoLeaderboardEntry>().GetPseudo();
+        string pseudo = FindObjectOfType<PseudoLeaderboardEntry>().GetPseudoAndSave();
         if(pseudo.Length > 2 && FindObjectOfType<ScoreRequests>()) {
             FindObjectOfType<ScoreRequests>().UploadHighScore(pseudo, GameManager.GetInstance().GetScore());
         }
