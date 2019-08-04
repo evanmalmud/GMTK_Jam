@@ -35,6 +35,15 @@ public class SpawnPointsController : MonoBehaviour
 
     private List<GameObject> allEnemies = new List<GameObject>();
 
+
+    public int basicEnemyPerSecond = 3;
+    public int randomMediumSpawnMin = 7;
+    public int randomMediumSpawnMax = 21;
+    public int randomHardSpawnMin = 13;
+    public int randomHardSpawnMax = 26;
+    //public float randomMediumSpawnMin = 7.0f;
+    //public float randomBasicSpawnMax = 21.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -94,7 +103,7 @@ public class SpawnPointsController : MonoBehaviour
         basicSpawnRunning = true;
         SpawnEnemy("basic", false, basicEnemyIndex);
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(basicEnemyPerSecond);
         
         basicEnemyIndex = (basicEnemyIndex + 1)%BasicPoints.Count;
         yield return SpawnBasicEnemy();
@@ -105,7 +114,7 @@ public class SpawnPointsController : MonoBehaviour
     IEnumerator SecondRandomSpawn() {
         SpawnEnemy("medium", true);
 
-        yield return new WaitForSeconds(random.Next(7, 21));
+        yield return new WaitForSeconds(random.Next(randomMediumSpawnMin, randomMediumSpawnMax));
 
         yield return SecondRandomSpawn();
     }
@@ -192,7 +201,7 @@ public class SpawnPointsController : MonoBehaviour
             yield return SpawnMediumEnemies();
         } else {
             // spawn 1
-            yield return new WaitForSeconds(7);
+            yield return new WaitForSeconds(randomMediumSpawnMin);
             SpawnEnemy("medium", true);
             yield return SpawnMediumEnemies();
         }
@@ -200,7 +209,7 @@ public class SpawnPointsController : MonoBehaviour
 
     IEnumerator ThirdStepRandomSpawns()
     {
-        yield return new WaitForSeconds(random.Next(13, 26)); // 13-25s
+        yield return new WaitForSeconds(random.Next(randomHardSpawnMin, randomHardSpawnMax)); // 13-25s
         SpawnEnemy("hard", true);
 
         yield return ThirdStepRandomSpawns();
@@ -264,7 +273,7 @@ public class SpawnPointsController : MonoBehaviour
             // spawn 1 : on random entry every 13s
             SpawnEnemy("hard", true);
             
-            yield return new WaitForSeconds(13);
+            yield return new WaitForSeconds(randomHardSpawnMin);
 
             yield return ThirdStepSpawns();
         }
