@@ -21,6 +21,10 @@ public class EnemyController : MonoBehaviour
 
     public int deathLength = 3;
 
+    public int playerDeathLength = 1;
+
+    private bool moving = true;
+
     private void Start()
     {
         animator = gameObject.GetComponentInParent<Animator>();
@@ -56,8 +60,12 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        Vector2 differenceNormalized = (target.position - transform.position).normalized;
-        rb.velocity = differenceNormalized * Speed;
+        if(moving)
+        {
+            Vector2 differenceNormalized = (target.position - transform.position).normalized;
+            rb.velocity = differenceNormalized * Speed;
+        }
+
     }
 
     private IEnumerator DestroyEnemy()
@@ -73,11 +81,15 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator DestroyPlayer()
     {
+        //Stop Movement
+        moving = false;
+        rb.velocity = Vector2.zero;
+
         animator.SetBool("Walking", false);
         animator.SetTrigger("Game Over");
         GameObject.FindObjectOfType<MenuController>().EndGameSounds();
 
-        yield return new WaitForSeconds(deathLength);
+        yield return new WaitForSeconds(playerDeathLength);
 
         GameObject.FindObjectOfType<MenuController>().EndGame();
         GameManager.GetInstance().EndGame();
