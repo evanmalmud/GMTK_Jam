@@ -23,7 +23,7 @@ public class EnemyScore : MonoBehaviour
             } else
             {
                 GameManager.GetInstance().IncreaseScore(other.GetContact(0).point, ScorePoints);
-                Destroy(gameObject);
+                GetComponent<EnemyController>().KillEnemy();
             }
         }
     }

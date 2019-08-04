@@ -17,7 +17,10 @@ public class PlayerDeath : MonoBehaviour
             {
                 if (GameManager.GetInstance().IsGameActive())
                 {
-                    GameManager.GetInstance().EndGame();
+                    if(other.gameObject.GetComponent<EnemyController>())
+                    {
+                        other.gameObject.GetComponent<EnemyController>().KillPlayer();
+                    }
                 }
             }
         }

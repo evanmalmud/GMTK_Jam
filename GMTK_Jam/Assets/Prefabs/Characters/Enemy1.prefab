@@ -75,6 +75,7 @@ MonoBehaviour:
   IsMedium: 0
   Speed: 5
   target: {fileID: 0}
+  deathLength: 3
 --- !u!58 &401121064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -176,7 +177,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5860201279712848224}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 94123f9657c5ccb40891c5c33f2f962a, type: 3}
   m_Controller: {fileID: 9100000, guid: ebb0433ed57d582479052e97da4426bb, type: 2}
   m_CullingMode: 1

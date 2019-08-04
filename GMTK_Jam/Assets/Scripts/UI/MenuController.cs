@@ -60,6 +60,12 @@ public class MenuController : MonoBehaviour
         mainMenu.SetActive(true);
     }
 
+    public void EndGameSounds()
+    {
+        AudioManager.instance.Pause("Theme");
+        AudioManager.instance.Play("Game Over");
+    }
+
     public void EndGame()
     {
         //enable gameOver Canvas
@@ -69,8 +75,6 @@ public class MenuController : MonoBehaviour
         
         
         Time.timeScale = 0f;
-        AudioManager.instance.Pause("Theme");
-        AudioManager.instance.Play("Game Over");
     }
 
     private void Update()

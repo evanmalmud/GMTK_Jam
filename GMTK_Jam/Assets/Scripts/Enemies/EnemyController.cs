@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -16,8 +17,14 @@ public class EnemyController : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    Animator animator;
+
+    public int deathLength = 3;
+
     private void Start()
     {
+        animator = gameObject.GetComponentInParent<Animator>();
+        animator.SetBool("Walking", true);
         rb = GetComponent<Rigidbody2D>();
         
         if (GameObject.Find("PlayerTarget"))
@@ -26,21 +33,54 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    public void KillEnemy()
     {
+        //Disable RigidBodies and Colliders
+        Collider2D collid = GetComponent<Collider2D>();
+        collid.enabled = false;
+        
         if(IsBasic)
             GameManager.GetInstance().IncreaseBasicEnemeiesDefeated();
         if (IsMedium)
             GameManager.GetInstance().IncreaseMediumEnemeiesDefeated();
 
-        Destroy(transform.parent.gameObject);
+        StartCoroutine(DestroyEnemy());
         //Debug.Log("basic : " + GameManager.GetInstance().GetBasicEnemeiesDefeated());
         //Debug.Log("medium : " + GameManager.GetInstance().GetMediumEnemeiesDefeated());
+    }
+
+    public void KillPlayer()
+    {
+        StartCoroutine(DestroyPlayer());
     }
 
     private void Update()
     {
         Vector2 differenceNormalized = (target.position - transform.position).normalized;
         rb.velocity = differenceNormalized * Speed;
+    }
+
+    private IEnumerator DestroyEnemy()
+    {
+        animator.SetBool("Walking", false);
+        animator.SetTrigger("Die");
+
+        yield return new WaitForSeconds(deathLength);
+
+        Destroy(transform.parent.gameObject);
+        yield return null;
+    }
+
+    private IEnumerator DestroyPlayer()
+    {
+        animator.SetBool("Walking", false);
+        animator.SetTrigger("Game Over");
+        GameObject.FindObjectOfType<MenuController>().EndGameSounds();
+
+        yield return new WaitForSeconds(deathLength);
+
+        GameObject.FindObjectOfType<MenuController>().EndGame();
+        GameManager.GetInstance().EndGame();
+        yield return null;
     }
 }

@@ -65,7 +65,7 @@ public class GameManager
 
     public void EndGame()
     {
+        //Wait a few seconds so that we can play the GameOver anims
         isGameActive = false;
-        GameObject.FindObjectOfType<MenuController>().EndGame();
     }
 }
