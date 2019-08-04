@@ -17,11 +17,6 @@ public class ScorePoint : MonoBehaviour
         {
             GetComponent<TextMeshPro>().text = points;
         }
-        StartCoroutine("WaitAndDestroy");
-    }
-    
-    IEnumerator WaitAndDestroy() {
-        yield return new WaitForSeconds(displayTime);
-        Destroy(gameObject);
+        Destroy(gameObject, displayTime);
     }
 }

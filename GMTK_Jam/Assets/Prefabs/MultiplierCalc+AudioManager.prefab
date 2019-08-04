@@ -105,13 +105,24 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 1
-    playOnAwake: 1
+    playOnAwake: 0
     mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
       type: 2}
     source: {fileID: 0}
   - name: Multiplier 0
     clip: {fileID: 8300000, guid: 7091276c03ca54d41b2a72192c57ad14, type: 3}
     volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Wall Hit
+    clip: {fileID: 8300000, guid: f15d09e0420b126438c1864223a282bb, type: 3}
+    volume: 0.3
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -131,3 +142,26 @@ MonoBehaviour:
     mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
       type: 2}
     source: {fileID: 0}
+  - name: Menu Theme
+    clip: {fileID: 8300000, guid: ec801f27d2438ee4fb1e512b1f215d74, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    playOnAwake: 1
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Game Over
+    clip: {fileID: 8300000, guid: 52396a93a9571f44e93b92c92820f26d, type: 3}
+    volume: 0.2
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  LowpassValue: 582

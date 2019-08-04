@@ -11,6 +11,9 @@ public class AudioManager : MonoBehaviour
 
 	public Sound[] sounds;
 
+	public float LowpassValue;
+	private readonly float NormalValue = 5000f;
+
 	void Awake()
 	{
 		if (instance != null)
@@ -51,4 +54,36 @@ public class AudioManager : MonoBehaviour
 		s.source.Play();
 	}
 
+	public void Pause(string sound)
+	{
+		Sound s = Array.Find(sounds, item => item.name == sound);
+		if (s == null)
+		{
+			Debug.LogWarning("Sound: " + sound + " not found!");
+			return;
+		}
+		
+		s.source.Pause();
+	}
+	
+	public void Stop(string sound)
+	{
+		Sound s = Array.Find(sounds, item => item.name == sound);
+		if (s == null)
+		{
+			Debug.LogWarning("Sound: " + sound + " not found!");
+			return;
+		}
+		
+		s.source.Stop();
+	}
+
+	public void SetLowpass(bool state)
+	{
+		
+		if (state)
+			mixerGroup.audioMixer.SetFloat("Master Lowpass", LowpassValue);
+		else
+			mixerGroup.audioMixer.SetFloat("Master Lowpass", NormalValue);
+	}
 }

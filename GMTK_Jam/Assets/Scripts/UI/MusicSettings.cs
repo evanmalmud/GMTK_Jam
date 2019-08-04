@@ -12,38 +12,33 @@ public class MusicSettings : MonoBehaviour
     public Slider MusicSlider;
     public Slider EffectSlider;
     public Toggle SoundToggle;
-
-    public GameObject Background;
         
     // Start is called before the first frame update
-    void Start()
-    {
-        Mixer.GetFloat("Music", out var value);
-        MusicSlider.value = value;
-        Mixer.GetFloat("Effects", out value);
-        EffectSlider.value = value;
-        
-        Background.SetActive(false);
-    }
 
-    private void Update()
+    public void LoadSettings()
     {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            Background.SetActive(!Background.activeSelf);
-        }
+        float musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0f);
+        Mixer.SetFloat("Music", musicVolume);
+        MusicSlider.value = musicVolume;
+
+        float effectsVolume = PlayerPrefs.GetFloat("EffectsVolume", 0f);
+        Mixer.SetFloat("Effects", effectsVolume);
+        EffectSlider.value = effectsVolume;
+
+        int soundOff = PlayerPrefs.GetInt("SoundOff", 0);
+        SoundToggle.isOn = soundOff == 1;
     }
 
     public void MusicSliderUpdate()
     {
-        Debug.Log(MusicSlider.value);
         Mixer.SetFloat("Music", MusicSlider.value);
+        PlayerPrefs.SetFloat("MusicVolume", MusicSlider.value);
     }
 
     public void EffectSliderUpdate()
     {
-        Debug.Log(EffectSlider.value);
         Mixer.SetFloat("Effects", EffectSlider.value);
+        PlayerPrefs.SetFloat("EffectsVolume", EffectSlider.value);
     }
 
     public void OnSoundToggleChange()
@@ -55,5 +50,7 @@ public class MusicSettings : MonoBehaviour
         {
             Mixer.SetFloat("Master", 0);
         }
+        
+        PlayerPrefs.SetInt("SoundOff", SoundToggle.isOn ? 1 : 0);
     }
 }
