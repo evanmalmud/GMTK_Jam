@@ -165,6 +165,83 @@ MonoBehaviour:
     mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
       type: 2}
     source: {fileID: 0}
+  - name: Hurt 0
+    clip: {fileID: 8300000, guid: bedf1d015bccf404b905b5263a6487d4, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 1
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Hurt 1
+    clip: {fileID: 8300000, guid: a82e4cfe0d930ea48b9c61ced8ae7a73, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Hurt 2
+    clip: {fileID: 8300000, guid: 00e31ba3e1dc38040a7338749f8a78e8, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Hurt 3
+    clip: {fileID: 8300000, guid: 05feff0d9d6dca74cb33f7d69ca876e6, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Hurt 4
+    clip: {fileID: 8300000, guid: 05cb3607c7cef5749835cef9aebd24a0, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Hurt 5
+    clip: {fileID: 8300000, guid: 6514d6bc1868c814d90607dc5353cb1c, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Hurt 6
+    clip: {fileID: 8300000, guid: 10fac11cca2c65c4282b190351dd27a0, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -1146653098129487155, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
   LowpassValue: 582
 --- !u!114 &1459538563931195405
 MonoBehaviour:
