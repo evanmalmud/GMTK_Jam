@@ -293,4 +293,9 @@ public class SpawnPointsController : MonoBehaviour
         allEnemies.Add(spawn);
 
     }
+
+    public void ResetBasicEnemyCount()
+    {
+        basicEnemyIndex = 0;
+    }
 }

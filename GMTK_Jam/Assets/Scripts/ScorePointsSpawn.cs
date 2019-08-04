@@ -9,7 +9,6 @@ public class ScorePointsSpawn : MonoBehaviour
 
     public void AddScorePoint(Vector3 position, int points)
     {
-        print("addScorePoint Called");
         GameObject instance = Instantiate(ScorePointPrefab, transform);
         //TODO Issue with UI render distance. Taking the easy fix
         instance.transform.position = new Vector3( position.x, position.y, -10);
