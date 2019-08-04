@@ -92,6 +92,11 @@ public class MenuController : MonoBehaviour
         Time.timeScale = display ? 0f : 1f;
     }
 
+    public void PlayCLickSound()
+    {
+        AudioManager.instance.Play("Click " + new System.Random().Next(2));
+    }
+
     public void Exit()
     {
         Application.Quit();

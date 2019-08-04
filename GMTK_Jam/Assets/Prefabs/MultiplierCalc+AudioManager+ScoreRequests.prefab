@@ -231,6 +231,28 @@ MonoBehaviour:
     mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
       type: 2}
     source: {fileID: 0}
+  - name: Click 0
+    clip: {fileID: 8300000, guid: 006a06f4cf0bbbb4688428d8d8002148, type: 3}
+    volume: 0.3
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Click 1
+    clip: {fileID: 8300000, guid: 09dece54a18dcda4c9980f0d986f717b, type: 3}
+    volume: 0.3
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 1
+    mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
   LowpassValue: 582
 --- !u!114 &1459538563931195405
 MonoBehaviour:
