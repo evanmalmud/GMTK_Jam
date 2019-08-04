@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74a0afc6-3527-4e63-87de-8c66ca058119" name="Default Changelist" comment="Merge branch 'master' of https://github.com/evanmalmud/GMTK_Jam&#10;&#10;# Conflicts:&#10;#&#9;GMTK_Jam/Assets/Scripts/Bumper.meta">
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SettingsMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SettingsMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MusicSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MusicSettings.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,9 +193,9 @@
             <state relative-caret-position="266">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
-                <marker date="1564938947797" expanded="true" signature="6:58" ph="..." />
-                <marker date="1564938947797" expanded="true" signature="144:2427" ph="{...}" />
-                <marker date="1564938947797" expanded="true" signature="2269:2425" ph="{...}" />
+                <marker date="1564943708906" expanded="true" signature="6:58" ph="..." />
+                <marker date="1564943708906" expanded="true" signature="144:2581" ph="{...}" />
+                <marker date="1564943708906" expanded="true" signature="2423:2579" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -460,7 +459,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41669000" />
+    <option name="totallyTimeSpent" value="41946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,7 +471,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25253063" />
@@ -844,9 +843,9 @@
         <state relative-caret-position="266">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
-            <marker date="1564938947797" expanded="true" signature="6:58" ph="..." />
-            <marker date="1564938947797" expanded="true" signature="144:2427" ph="{...}" />
-            <marker date="1564938947797" expanded="true" signature="2269:2425" ph="{...}" />
+            <marker date="1564943708906" expanded="true" signature="6:58" ph="..." />
+            <marker date="1564943708906" expanded="true" signature="144:2581" ph="{...}" />
+            <marker date="1564943708906" expanded="true" signature="2423:2579" ph="{...}" />
           </folding>
         </state>
       </provider>
