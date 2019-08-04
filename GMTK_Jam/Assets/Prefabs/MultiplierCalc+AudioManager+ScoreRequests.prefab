@@ -172,7 +172,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
-    playOnAwake: 1
+    playOnAwake: 0
     mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
       type: 2}
     source: {fileID: 0}
@@ -212,6 +212,17 @@ MonoBehaviour:
   - name: Hurt 4
     clip: {fileID: 8300000, guid: 5adf255914a07a44bb2faa3d7658dc4e, type: 3}
     volume: 0.13
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    playOnAwake: 0
+    mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
+      type: 2}
+    source: {fileID: 0}
+  - name: Wall Hurt
+    clip: {fileID: 8300000, guid: f15d09e0420b126438c1864223a282bb, type: 3}
+    volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
