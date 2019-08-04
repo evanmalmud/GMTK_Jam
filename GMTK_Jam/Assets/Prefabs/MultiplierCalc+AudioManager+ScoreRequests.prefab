@@ -90,7 +90,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ScoreUp
     clip: {fileID: 8300000, guid: 92540aed0f98de047afd10de750341bd, type: 3}
-    volume: 0.15
+    volume: 0.1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -167,18 +167,18 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Hurt 0
     clip: {fileID: 8300000, guid: 950ba51e86a58de49aece7265492229d, type: 3}
-    volume: 0.25
+    volume: 0.13
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
     loop: 0
-    playOnAwake: 0
+    playOnAwake: 1
     mixerGroup: {fileID: -2550956039348069369, guid: cbc239c9446c81b4eace686c49a3f509,
       type: 2}
     source: {fileID: 0}
   - name: Hurt 1
     clip: {fileID: 8300000, guid: 6f329e6c22742ad49afc350614ac4818, type: 3}
-    volume: 0.25
+    volume: 0.13
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Hurt 2
     clip: {fileID: 8300000, guid: 6526d18607d1b08449c3d9418eaa46ad, type: 3}
-    volume: 0.25
+    volume: 0.13
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Hurt 3
     clip: {fileID: 8300000, guid: 77fca5e19beb17f45981d7de1a1d6ea7, type: 3}
-    volume: 0.25
+    volume: 0.13
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Hurt 4
     clip: {fileID: 8300000, guid: 5adf255914a07a44bb2faa3d7658dc4e, type: 3}
-    volume: 0.25
+    volume: 0.13
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
