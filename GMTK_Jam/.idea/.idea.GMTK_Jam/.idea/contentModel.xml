@@ -49,6 +49,7 @@
             <e p="MultiplierCalc.cs" t="Include" />
             <e p="MultiplierText.cs" t="Include" />
             <e p="MusicSettings.cs" t="Include" />
+            <e p="ScoreEndScreen.cs" t="Include" />
             <e p="ScoreTextPoints.cs" t="Include" />
           </e>
         </e>
