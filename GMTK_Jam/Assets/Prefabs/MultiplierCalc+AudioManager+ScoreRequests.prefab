@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 4638951745771589766}
   - component: {fileID: 4638951745771589765}
   - component: {fileID: 1937675513486029986}
+  - component: {fileID: 1459538563931195405}
   m_Layer: 0
-  m_Name: MultiplierCalc+AudioManager
+  m_Name: MultiplierCalc+AudioManager+ScoreRequests
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +90,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ScoreUp
     clip: {fileID: 8300000, guid: 92540aed0f98de047afd10de750341bd, type: 3}
-    volume: 0.4
+    volume: 0.15
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -165,3 +166,15 @@ MonoBehaviour:
       type: 2}
     source: {fileID: 0}
   LowpassValue: 582
+--- !u!114 &1459538563931195405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4638951745771589764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff90ae05fce45a4e919abddc9e221c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

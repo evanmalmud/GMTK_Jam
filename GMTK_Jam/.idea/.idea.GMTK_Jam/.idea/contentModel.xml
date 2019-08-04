@@ -41,7 +41,7 @@
               <e p="LeaderBoardHandler.cs" t="Include" />
               <e p="PseudoLeaderboardEntry.cs" t="Include" />
               <e p="ScoreCanvasScript.cs" t="Include" />
-              <e p="TriggerEndMenu.cs" t="Include" />
+              <e p="ScoreRequests.cs" t="Include" />
             </e>
             <e p="MenuController.cs" t="Include" />
             <e p="MultiplierCalc.cs" t="Include" />

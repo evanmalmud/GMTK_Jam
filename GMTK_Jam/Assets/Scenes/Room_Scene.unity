@@ -1738,6 +1738,8 @@ MonoBehaviour:
   mainMenu: {fileID: 1137144287}
   gameOverMenu: {fileID: 6250574281602938768}
   SettingsMenu: {fileID: 898448334}
+  LeaderboardMenu: {fileID: 0}
+  ScoreUI: {fileID: 416313635}
 --- !u!4 &152184775
 Transform:
   m_ObjectHideFlags: 0
@@ -5282,6 +5284,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6955395299488466390, guid: 0b3e6dd0b4d3bca47954959fcf64346f,
     type: 3}
   m_PrefabInstance: {fileID: 414765167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &416313635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7205804399592536102, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+    type: 3}
+  m_PrefabInstance: {fileID: 849727042}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &416313636 stripped
 RectTransform:
@@ -10268,6 +10276,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpeedAndScoreCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205804399592536102, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7205804399592536098, guid: 0a36c984f0bdfe44e9ebfbc075ca3de7,
         type: 3}
@@ -27449,11 +27462,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndGame
       objectReference: {fileID: 0}
-    - target: {fileID: 2076857902945021039, guid: 61788cbd58b577d4fb769e49d68de37e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2076857902945021012, guid: 61788cbd58b577d4fb769e49d68de37e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27569,20 +27577,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartGame
       objectReference: {fileID: 0}
-    - target: {fileID: 2076857901671267715, guid: 61788cbd58b577d4fb769e49d68de37e,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2076857901671267715, guid: 61788cbd58b577d4fb769e49d68de37e,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2076857901713283408, guid: 61788cbd58b577d4fb769e49d68de37e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1.7000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2117416828311328716, guid: 61788cbd58b577d4fb769e49d68de37e,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 2.6724627
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947799045620055192, guid: 61788cbd58b577d4fb769e49d68de37e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 152184774}
+    - target: {fileID: 6947799045620055192, guid: 61788cbd58b577d4fb769e49d68de37e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToLeaderBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947799045620055192, guid: 61788cbd58b577d4fb769e49d68de37e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61788cbd58b577d4fb769e49d68de37e, type: 3}

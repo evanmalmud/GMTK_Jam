@@ -13,8 +13,10 @@ public class PseudoLeaderboardEntry : MonoBehaviour
         input = GetComponent<TMP_InputField>();
     }
 
-    public void OnValueChange(string value) {
-        if(value.Length > 3)
+    public void OnValueChange(string value)
+    {
+        input.text = input.text.ToUpper();
+        if (value.Length > 3)
             input.text = value.Substring(0, 3);
     }
 
