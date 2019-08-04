@@ -41,8 +41,6 @@ public class SpawnPointsController : MonoBehaviour
     public int randomMediumSpawnMax = 21;
     public int randomHardSpawnMin = 13;
     public int randomHardSpawnMax = 26;
-    //public float randomMediumSpawnMin = 7.0f;
-    //public float randomBasicSpawnMax = 21.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -297,8 +295,8 @@ public class SpawnPointsController : MonoBehaviour
                 prefab = BasicEnemyPrefab;
                 break;
         }
-
-        GameObject spawn = Instantiate(prefab, entry.position, Quaternion.identity);
+        
+        GameObject spawn = Instantiate(prefab, entry.position, entry.rotation);
         allEnemies.Add(spawn);
 
     }

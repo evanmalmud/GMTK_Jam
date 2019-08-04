@@ -32,6 +32,8 @@ public class EnemyController : MonoBehaviour
             GameManager.GetInstance().IncreaseBasicEnemeiesDefeated();
         if (IsMedium)
             GameManager.GetInstance().IncreaseMediumEnemeiesDefeated();
+
+        Destroy(transform.parent.gameObject);
         //Debug.Log("basic : " + GameManager.GetInstance().GetBasicEnemeiesDefeated());
         //Debug.Log("medium : " + GameManager.GetInstance().GetMediumEnemeiesDefeated());
     }
