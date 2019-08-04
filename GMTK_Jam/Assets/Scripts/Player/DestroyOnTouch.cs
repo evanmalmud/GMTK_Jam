@@ -14,7 +14,7 @@ public class DestroyOnTouch : MonoBehaviour
             if (other.gameObject.tag.Equals(tag))
             {
                 // Destroy
-                Destroy(other.gameObject);
+                //Destroy(other.gameObject);
             }
         }
     }

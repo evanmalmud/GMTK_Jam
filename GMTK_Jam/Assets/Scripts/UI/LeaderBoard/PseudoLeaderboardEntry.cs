@@ -27,8 +27,10 @@ public class PseudoLeaderboardEntry : MonoBehaviour
             }
         }
         
-        if (value.Length > 3)
-            input.text = value.Substring(0, 3);
+        if (cleanString.Length > 3)
+            cleanString = cleanString.Substring(0, 3);
+
+        input.text = cleanString;
     }
 
     public string GetPseudo() {

@@ -161,3 +161,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScorePoints: 5
+  IsMedium: 0
+  PlayerTag: Player
