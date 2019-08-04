@@ -75,7 +75,7 @@ public class MenuController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            SetSettingsMenu(!SettingsMenu.activeSelf);
+           SetSettingsMenu(!SettingsMenu.activeSelf);
         }
     }
 
