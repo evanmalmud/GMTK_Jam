@@ -70,11 +70,19 @@ public class MouseFollowMove : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    [TagSelector] public string[] TagFilterArray;
+
+    // Start is called before the first frame update
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        //disable movement
-        disableMovement = true;
-        Diamond.SetActive(false);
-        disableMovementTimer = disableMovementDefaultVal;
+        foreach (string tag in TagFilterArray)
+        {
+            if (other.gameObject.tag.Equals(tag))
+            {
+                disableMovement = true;
+                Diamond.SetActive(false);
+                disableMovementTimer = disableMovementDefaultVal;
+            }
+        }
     }
 }
