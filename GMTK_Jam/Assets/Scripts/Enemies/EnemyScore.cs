@@ -12,11 +12,10 @@ public class EnemyScore : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log(IsMedium);
         // very easy way for double hit
         if (other.collider.CompareTag(PlayerTag))
         {
-            AudioManager.instance.Play("Enemy " + new System.Random().Next(7));
+            AudioManager.instance.Play("Hurt " + new System.Random().Next(5));
 
             if (IsMedium)
             {

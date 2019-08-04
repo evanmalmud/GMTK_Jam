@@ -48,6 +48,7 @@ public class MenuController : MonoBehaviour
         LeaderboardMenu.SetActive(true);
         ScoreUI.SetActive(false);
         
+        AudioManager.instance.Stop("Game Over");
         AudioManager.instance.Pause("Theme");
         AudioManager.instance.Play("Menu Theme");
     }
