@@ -49,6 +49,7 @@ public class GameManager
     public void StartGame()
     {
         ResetScore();
+        ResetEnemiesDefeated();
         if (GameObject.FindObjectOfType<SpawnPointsController>())
             GameObject.FindObjectOfType<SpawnPointsController>().ResetBasicEnemyCount();
         isGameActive = true;
@@ -67,5 +68,11 @@ public class GameManager
     {
         isGameActive = false;
         GameObject.FindObjectOfType<MenuController>().EndGame();
+    }
+
+    public void ResetEnemiesDefeated()
+    {
+        basicEnemiesDefeated = 0;
+        mediumEnemiesDefeated = 0;
     }
 }
