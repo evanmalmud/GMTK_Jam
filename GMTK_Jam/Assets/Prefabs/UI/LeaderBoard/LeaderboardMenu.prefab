@@ -577,10 +577,10 @@ MonoBehaviour:
   LeaderboardEntries:
   - {fileID: 5936163815044053617}
   - {fileID: 7668355955380311067}
-  - {fileID: 6192127802691513525}
-  - {fileID: 6290399095769623031}
   - {fileID: 4201232706469421961}
+  - {fileID: 6192127802691513525}
   - {fileID: 416693544151046951}
+  - {fileID: 6290399095769623031}
   - {fileID: 535157983389441637}
 --- !u!1 &2070809883477032409
 GameObject:
@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_GlobalFontAsset: {fileID: 11400000, guid: e02ea99d64eeec7438377fd4fbe172e6, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
@@ -1145,8 +1145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10.698}
-  m_SizeDelta: {x: 0, y: -21.395}
+  m_AnchoredPosition: {x: 0, y: -12.4}
+  m_SizeDelta: {x: 0, y: -46.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2070809885144556419
 CanvasRenderer:
@@ -1178,8 +1178,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e02ea99d64eeec7438377fd4fbe172e6, type: 2}
+  m_sharedMaterial: {fileID: 7889320596323131669, guid: e02ea99d64eeec7438377fd4fbe172e6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1204,7 +1205,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 39.8
   m_fontSizeBase: 37.8
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1242,7 +1243,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 10, y: 0, z: 10, w: 0}
   m_textInfo:
     textComponent: {fileID: 2070809885144556418}
     characterCount: 1
