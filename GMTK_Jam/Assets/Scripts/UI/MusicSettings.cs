@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class MusicSettings : MonoBehaviour
 {
     public AudioMixer Mixer;
+    public Slider MasterSlider;
     public Slider MusicSlider;
     public Slider EffectSlider;
     public Toggle SoundToggle;
@@ -24,6 +25,10 @@ public class MusicSettings : MonoBehaviour
         float effectsVolume = PlayerPrefs.GetFloat("EffectsVolume", 0f);
         Mixer.SetFloat("Effects", effectsVolume);
         EffectSlider.value = effectsVolume;
+
+        float masterVolume = PlayerPrefs.GetFloat("MasterVolume", 0f);
+        Mixer.SetFloat("Master", masterVolume);
+        MasterSlider.value = masterVolume;
 
         int soundOff = PlayerPrefs.GetInt("SoundOff", 0);
         SoundToggle.isOn = soundOff == 1;
@@ -41,6 +46,12 @@ public class MusicSettings : MonoBehaviour
         PlayerPrefs.SetFloat("EffectsVolume", EffectSlider.value);
     }
 
+    public void MasterSliderUpdate()
+    {
+        Mixer.SetFloat("Master", MasterSlider.value);
+        PlayerPrefs.SetFloat("MasterVolume", MasterSlider.value);
+    }
+
     public void OnSoundToggleChange()
     {
         if (SoundToggle.isOn)
@@ -48,7 +59,7 @@ public class MusicSettings : MonoBehaviour
             Mixer.SetFloat("Master", -80);
         } else
         {
-            Mixer.SetFloat("Master", 0);
+            Mixer.SetFloat("Master", MasterSlider.value);
         }
         
         PlayerPrefs.SetInt("SoundOff", SoundToggle.isOn ? 1 : 0);
