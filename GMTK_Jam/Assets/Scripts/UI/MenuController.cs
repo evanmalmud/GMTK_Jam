@@ -10,10 +10,13 @@ public class MenuController : MonoBehaviour
     public GameObject gameOverMenu;
     public GameObject SettingsMenu;
 
+    public GameObject ScoreUI;
+
     private void Start()
     {
         mainMenu.SetActive(true);
         gameOverMenu.SetActive(false);
+        ScoreUI.SetActive(false);
         
         SetSettingsMenu(false);
         
@@ -23,9 +26,13 @@ public class MenuController : MonoBehaviour
     public void StartGame()
     {
         GameManager.GetInstance().StartGame();
+        
         mainMenu.SetActive(false);
         gameOverMenu.SetActive(false);
+        ScoreUI.SetActive(true);
+        
         SetSettingsMenu(false);
+        
         AudioManager.instance.Pause("Menu Theme");
         AudioManager.instance.Play("Theme");
     }
@@ -34,7 +41,10 @@ public class MenuController : MonoBehaviour
     {
         //enable gameOver Canvas
         gameOverMenu.SetActive(true);
+        ScoreUI.SetActive(false);
         SetSettingsMenu(false);
+        
+        
         Time.timeScale = 0f;
         AudioManager.instance.Pause("Theme");
         AudioManager.instance.Play("Game Over");
