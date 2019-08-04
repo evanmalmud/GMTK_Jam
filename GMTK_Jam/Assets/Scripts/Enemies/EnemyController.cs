@@ -70,6 +70,10 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator DestroyEnemy()
     {
+        //Stop Movement
+        moving = false;
+        rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0.0f;
         animator.SetBool("Walking", false);
         animator.SetTrigger("Die");
 
@@ -84,6 +88,7 @@ public class EnemyController : MonoBehaviour
         //Stop Movement
         moving = false;
         rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0.0f;
 
         animator.SetBool("Walking", false);
         animator.SetTrigger("Game Over");

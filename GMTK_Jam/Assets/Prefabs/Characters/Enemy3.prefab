@@ -393,7 +393,8 @@ MonoBehaviour:
   IsMedium: 1
   Speed: 6
   target: {fileID: 0}
-  deathLength: 3
+  deathLength: 2
+  playerDeathLength: 1
 --- !u!58 &8503853739625544419
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -403,7 +404,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 6866796677583974179}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: add47bc518e411345a2b5b21239c0e1e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
