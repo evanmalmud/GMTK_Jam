@@ -39,11 +39,7 @@ public class GameManager
         GameObject.FindObjectOfType<MultiplierCalc>().UpdateMultiplier(1);
 
         score += amount * GameObject.FindObjectOfType<MultiplierCalc>().currentMultiplier;
-        ScoreTextPoints sp = GameObject.FindObjectOfType<ScoreTextPoints>();
-        if (sp != null)
-        {
-            sp.UpdateScoreText(score);
-        }
+        UpdateScore(score);
 
         if (GameObject.FindObjectOfType<ScorePointsSpawn>())
             GameObject.FindObjectOfType<ScorePointsSpawn>().AddScorePoint(position, amount);
@@ -51,7 +47,17 @@ public class GameManager
 
     public void StartGame()
     {
+        ResetScore();
         isGameActive = true;
+    }
+
+    public void UpdateScore(int UpdateScore)
+    {
+        ScoreTextPoints sp = GameObject.FindObjectOfType<ScoreTextPoints>();
+        if (sp != null)
+        {
+            sp.UpdateScoreText(UpdateScore);
+        }
     }
 
     public void EndGame()

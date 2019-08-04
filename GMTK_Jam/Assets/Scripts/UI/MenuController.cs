@@ -54,7 +54,7 @@ public class MenuController : MonoBehaviour
     public void GoToMainMenu()
     {
         LeaderboardMenu.SetActive(false);
-        
+        SettingsMenu.SetActive(false);
         mainMenu.SetActive(true);
     }
 

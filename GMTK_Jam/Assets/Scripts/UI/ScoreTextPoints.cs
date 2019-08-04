@@ -12,11 +12,16 @@ public class ScoreTextPoints : MonoBehaviour
 
     private static readonly int ScoreUpdate = Animator.StringToHash("Update");
 
+
+    private void OnEnable()
+    {
+        ResetScore();
+    }
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         text = GetComponent<TextMeshProUGUI>();
-        text.text = "0";
+        ResetScore();
     }
     
     public void UpdateScoreText(int score) {
@@ -24,5 +29,10 @@ public class ScoreTextPoints : MonoBehaviour
         if(GetComponent<Animator>())
             GetComponent<Animator>().SetTrigger(ScoreUpdate);
         AudioManager.instance.Play("ScoreUp");
+    }
+
+    public void ResetScore()
+    {
+        text.text = "0";
     }
 }
