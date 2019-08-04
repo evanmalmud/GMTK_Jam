@@ -391,7 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsBasic: 0
   IsMedium: 1
-  Speed: 5
+  Speed: 6
   target: {fileID: 0}
   deathLength: 3
 --- !u!58 &8503853739625544419
