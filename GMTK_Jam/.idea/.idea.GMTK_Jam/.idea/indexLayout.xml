@@ -15,7 +15,6 @@
       <Path>.idea</Path>
       <Path>.vscode</Path>
       <Path>Library</Path>
-      <Path>PinballRodeo</Path>
       <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
