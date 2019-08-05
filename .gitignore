@@ -36,3 +36,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 ScreenShots/WesternTest1.avi
+GMTK_Jam/PinballRodeo/*
+*.zip

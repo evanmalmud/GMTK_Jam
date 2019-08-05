@@ -15,7 +15,7 @@ public class ScoreRequests : MonoBehaviour
     {
         
         #pragma warning disable 0618
-        WWW request = new WWW("http://dreamlo.com/lb/5d4548ac7682801758e56f55/pipe/0/7");
+        WWW request = new WWW("https://therolf.fr/leaderboard.php?getLeaderboard=7");
         //Debug.Log("Started Downloading leaderboard");
         #pragma warning restore 0618
         
@@ -38,7 +38,7 @@ public class ScoreRequests : MonoBehaviour
     
     IEnumerator UploadNewHighscore(string username, int score) {
         #pragma warning disable 0618
-        WWW www = new WWW("http://dreamlo.com/lb/uEuQco4nukidyS_1ZkyNqgcO6gNWYLD0C0baODBF1ebA/add/" + WWW.EscapeURL(username) + "/" + score);
+        WWW www = new WWW("https://therolf.fr/leaderboard.php?sendLeaderboardPseudo=" + WWW.EscapeURL(username) + "&sendLeaderboardScore=" + score);
         #pragma warning restore 0618
         
         yield return www;
